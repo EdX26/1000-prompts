@@ -9,6 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: '1000 Prompts - Encontre o prompt perfeito para sua IA',
   description: 'Biblioteca curada de prompts para ChatGPT, Claude, Midjourney e outras IAs. Copie e use instantaneamente.',
+  verification: { google: 'CJx5smH1a3tXIsMNWotGN0FbYxnH3CfuGYr5nQOWN44' },
   generator: 'v0.app',
   icons: {
     icon: [
