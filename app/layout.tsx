@@ -9,7 +9,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: '1000 Prompts - Encontre o prompt perfeito para sua IA',
   description: 'Biblioteca curada de prompts para ChatGPT, Claude, Midjourney e outras IAs. Copie e use instantaneamente.',
-  verification: { google-site-verification=yXnM6qcGwCFzcc4KeG8juKa6OirmESI1CnNhNXnyl1I },
+  verification: { 
+    google: 'yXnM6qcGwCFzcc4KeG8juKa6OirmESI1CnNhNXnyl1I' 
+  },
   generator: 'v0.app',
   icons: {
     icon: [
@@ -36,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-   <html lang="pt-BR" className="bg-background">
+    <html lang="pt-BR" className="bg-background">
       <head>
         <script
           async
