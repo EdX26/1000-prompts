@@ -40,9 +40,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="bg-background">
       <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4260838545194084"
+      <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6707660829432221" 
           crossOrigin="anonymous"
         ></script>
       </head>
