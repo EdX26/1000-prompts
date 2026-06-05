@@ -37,99 +37,77 @@ export const prompts: Prompt[] = [
     "category": "Estratégia e Finanças B3",
     "prompt": "Estruture um plano preliminar de planejamento sucessório e proteção patrimonial através de uma Holding Familiar para um patrimônio avaliado em R$ [X] composto por [imóveis/empresas/ativos financeiros]. Foque na redução legal do ITCMD e na governança de transição de cotas."
   },
-  {
-    "id": 6,
-    "title": "Checklist de CAPEX e OPEX para Projetos",
-    "category": "Estratégia e Finanças B3",
-    "prompt": "Crie uma planilha estruturada em texto para estimativa financeira do projeto [nome do projeto]. Separe de forma rígida os custos de CAPEX (investimento inicial em infraestrutura) e OPEX (manutenção e custo recorrente mensal) para um horizonte de [X] anos."
-  },
-  {
-    "id": 7,
-    "title": "Pitch de Viabilidade para Investidores Seed",
-    "category": "Estratégia e Finanças B3",
-    "prompt": "Escreva o roteiro de slides para um deck de investimento em estágio Seed para o projeto [descreva o negócio]. O foco do pitch deve ser provar matematicamente o tamanho do mercado (TAM, SAM, SOM) e a tração inicial usando um modelo de receita baseado em [SaaS/Assinatura/Transacional]."
-  },
 
   // --- CATEGORIA: MARKETING & VENDAS CORPORATIVAS ---
   {
-    "id": 8,
+    "id": 6,
     "title": "Script de Prospecção Cold Mail B2B",
     "category": "Marketing e Vendas Corporativas",
-    "prompt": "Escreva uma sequência de [X] e-mails frios de prospecção ativa direcionados a [cargos dos decisores, ex: Diretores Financeiros] de médias empresas do setor de [setor]. Elimine termos prolixos, vá direto ao ponto de dor sobre [problema comum] e finalize focando no ROI."
+    "prompt": "Escreva uma sequência de [X] e-mails frios de prospecção activa direcionados a [cargos dos decisores, ex: Diretores Financeiros] de médias empresas do setor de [setor]. Elimine termos prolixos, vá direto ao ponto de dor sobre [problema comum] e finalize focando no ROI."
   },
   {
-    "id": 9,
+    "id": 7,
     "title": "Contorno de Objeções de Preço High-Ticket",
     "category": "Marketing e Vendas Corporativas",
     "prompt": "Atue como um gerente de vendas sênior. Crie uma matriz de respostas persuasivas para a objeção 'está muito caro' para um serviço de [descreva o serviço] corporativo que custa R$ [X]. Mude o foco da conversa de custo para custo de oportunidade e ganho de eficiência."
   },
   {
-    "id": 10,
+    "id": 8,
     "title": "Abordagem de Social Selling no LinkedIn",
     "category": "Marketing e Vendas Corporativas",
     "prompt": "Desenvolva um roteiro de [X] etapas para interagir e abordar de forma orgânica um tomador de decisão com cargo de [inserir cargo] no LinkedIn. O objetivo é agendar um alinhamento comercial rápido sem parecer invasivo e sem usar jargões excessivamente formais."
   },
-  {
-    "id": 11,
-    "title": "Roteiro de Pitch Baseado em SPIN Selling",
-    "category": "Marketing e Vendas Corporativas",
-    "prompt": "Crie um roteiro de vendas estruturado na metodologia SPIN. Desenvolva perguntas exatas sobre a [Situação] atual do cliente, o [Problema] invisível na operação, a [Implicação] financeira de não resolver isso e a [Necessidade de Solução] do meu produto: [nome do produto]."
-  },
-  {
-    "id": 12,
-    "title": "Proposta Comercial Estruturada em Tópicos",
-    "category": "Marketing e Vendas Corporativas",
-    "prompt": "Esboce uma proposta comercial profissional para a prestação de serviços de [descreva o serviço]. Divida a estrutura estritamente em: Apresentação Executiva, Diagnóstico do Problema, Escopo da Solução, Cronograma de Entregas, Investimento e Próximos Passos."
-  },
-  {
-    "id": 13,
-    "title": "Estratégia de Marketing Digital de Experiência",
-    "category": "Marketing e Vendas Corporativas",
-    "prompt": "Desenvolva uma campanha de marketing de experiência (Retailtainment) focada no lançamento de [produto/serviço premium]. Planeje ações que misturem atrativos físicos no local com campanhas de anúncios geo-localizados no Instagram e WhatsApp."
-  },
 
   // --- CATEGORIA: TECNOLOGIA & ENGENHARIA DE PROMPT ---
   {
-    "id": 14,
+    "id": 9,
     "title": "Midjourney: Fotorrealismo Editorial de Luxo",
     "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Gere uma string de prompt avançada para o Midjourney v6. O sujeito central deve ser [descreva a cena ou objeto de luxo]. Inclua modificadores técnicos como: estilo fotografia editorial de alta costura, iluminação suave de janela lateral, lente de 85mm f/1.4, profundidade de campo rasa, resolução 8k, --ar 16:9 --style raw."
+    "prompt": "Gere uma string de prompt avançada para o Midjourney v6. O sujeito central deve ser [descreva a scene ou objeto de luxo]. Inclua modificadores técnicos como: estilo fotografia editorial de alta costura, iluminação suave de janela lateral, lente de 85mm f/1.4, profundidade de campo rasa, resolução 8k, --ar 16:9 --style raw."
+  },
+  {
+    "id": 10,
+    "title": "DALL-E 3: Criação de Logotipo Vetorial Minimalista",
+    "category": "Tecnologia e Engenharia de Prompt",
+    "prompt": "Crie un prompt detalhado para gerar um logotipo vetorial em estilo flat design para uma empresa de [nicho de mercado]. O logo deve usar as cores [cor 1] e [cor 2], ser centralizado em um fundo branco sólido, focar na geometria simétrica e não conter textos ou gradientes."
+  },
+
+  // --- NOVA CATEGORIA: VÍDEOS CURTOS (GEMINI) ---
+  {
+    "id": 11,
+    "title": "Roteiro de Retenção Extrema (Efeito Loop)",
+    "category": "Vídeos Curtos (Gemini)",
+    "prompt": "Crie o roteiro de um vídeo de [30/60] segundos sobre [tema] focado no nicho de [mercado]. O texto deve aplicar a técnica do loop perfeito, onde a última frase falada se conecta sem emendas com o gancho inicial. Estruture em: [Visual da Cena], [Locução] e [Efeito Sonoro]."
+  },
+  {
+    "id": 12,
+    "title": "Gancho Magnético nos Primeiros 3 Segundos",
+    "category": "Vídeos Curtos (Gemini)",
+    "prompt": "Gere 5 variações de ganchos (hooks) iniciais disruptivos para um vídeo curto sobre [assunto]. Escreva as opções focando em diferentes gatilhos mentais: 1) Curiosidade cega, 2) Polêmica de mercado, 3) Quebra de expectativa, 4) Dor oculta, 5) Benefício imediato."
+  },
+  {
+    "id": 13,
+    "title": "Roteiro VSL Curto (Método P.A.S.)",
+    "category": "Vídeos Curtos (Gemini)",
+    "prompt": "Escreva o roteiro de um Short de conversão focado em apresentar o produto [nome do produto]. Siga rigidamente a fórmula PAS: apresente o [Problema da operação] nos primeiros 5 segundos, faça a [Agitação da dor] até os 25 segundos, e entregue a [Solução + CTA para clique no link] no final."
+  },
+  {
+    "id": 14,
+    "title": "Storytelling de Erro com Conexão Humana",
+    "category": "Vídeos Curtos (Gemini)",
+    "prompt": "Desenvolva o roteiro para um Reels narrado em primeira pessoa focado em autoridade. O tema é 'Como eu errei ao [descreva a falha ou decisão errada de negócios] e o que aprendi'. O tom deve ser transparente, eliminando formalidades e gerando identificação imediata com o espectador profissional."
   },
   {
     "id": 15,
-    "title": "DALL-E 3: Criação de Logotipo Vetorial Minimalista",
-    "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Crie um prompt detalhado para gerar um logotipo vetorial em estilo flat design para uma empresa de [nicho de mercado]. O logo deve usar as cores [cor 1] e [cor 2], ser centralizado em um fundo branco sólido, focar na geometria simétrica e não conter textos ou gradientes."
+    "title": "Tutorial Técnico de Tela: Passo a Passo Rápido",
+    "category": "Vídeos Curtos (Gemini)",
+    "prompt": "Estruture o esqueleto dinâmico de um vídeo tutorial de 45 segundos ensinando como fazer [tarefa técnica/automação]. Forneça indicações explícitas de quando exibir o clique na tela, quais os comandos de atalho usar e adicione uma legenda fluida para facilitar a leitura sem áudio."
   },
   {
     "id": 16,
-    "title": "Sora/Runway: Direção Visual Cinematográfica",
-    "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Escreva um comando de direção de cena para geradores de vídeo por IA. Descreva um plano contínuo de [X] segundos mostrando [descreva a cena urbana ou de infraestrutura]. Inclua instruções de movimento de câmera como [drone shot/panning/zoom out], iluminação de [pôr do sol/neon noturno] e atmosfera cinematográfica."
-  },
-  {
-    "id": 17,
-    "title": "System Prompt para Assistente Virtual GPT",
-    "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Desenvolva o 'System Prompt' (instrução mestre) para configurar um chatbot de IA focado no atendimento ao cliente de uma empresa de [nicho]. Defina as regras rígidas de tom de voz [técnico/acessível/premium], limites de atuação e como ele deve responder caso não saiba o preço de um serviço."
-  },
-  {
-    "id": 18,
-    "title": "Script Python para Consolidação de Relatórios",
-    "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Escreva um script em Python utilizando a biblioteca Pandas que abra múltiplos arquivos [CSV/Excel] contidos em uma pasta, consolide os dados em um único dataframe e gere um resumo estatístico contendo as métricas de [média/mediana/desvio padrão] salvas em um novo arquivo."
-  },
-  {
-    "id": 19,
-    "title": "Automação de API com Autenticação JWT",
-    "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Atue como um arquiteto de software sênior. Crie um template de código limpo em [Node.js/Python] demonstrando como implementar uma camada de segurança de autenticação via tokens JWT em uma API REST, incluindo a verificação de expiração do token no middleware."
-  },
-  {
-    "id": 20,
-    "title": "Configuração de Ambiente Dockerfile para Aplicações",
-    "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Escreva um arquivo Dockerfile otimizado para uma aplicação desenvolvida em [Node.js/Python/Go]. Certifique-se de usar uma imagem base leve, expor a porta [inserir porta], configurar as variáveis de ambiente e garantir que o cache de dependências seja aproveitado corretamente no processo de build."
+    "title": "Cópia de Anúncio de Alcance Geo-Localizado",
+    "category": "Vídeos Curtos (Gemini)",
+    "prompt": "Redija o script falado de um criativo em vídeo para Meta Ads focado em atrair o público empresarial da região de [inserir cidade/bairro]. Use um elemento visual marcante da localidade nos primeiros segundos como gancho de proximidade regional e finalize direcionando para o WhatsApp Business."
   }
 ];
 
