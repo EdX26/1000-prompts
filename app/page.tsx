@@ -3,7 +3,8 @@
 import { useState, useMemo } from "react"
 import { SearchBar } from "@/components/search-bar"
 import { PromptCard } from "@/components/prompt-card"
-import { prompts, categories } from "@/lib/prompts-data"
+// Mudamos a importação aqui para usar o uniqueCategories perfeitamente limpo
+import { prompts, uniqueCategories } from "@/lib/prompts-data"
 import { Badge } from "@/components/ui/badge"
 import { Sparkles } from "lucide-react"
 
@@ -70,6 +71,7 @@ export default function HomePage() {
       <section className="px-4 pb-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap gap-2 justify-center">
+            {/* Único botão Todos mantido manualmente na interface */}
             <Badge
               variant={selectedCategory === null ? "default" : "secondary"}
               className="cursor-pointer px-4 py-2 text-sm transition-colors"
@@ -77,7 +79,9 @@ export default function HomePage() {
             >
               Todos
             </Badge>
-            {categories.map((category) => {
+            
+            {/* Loop limpo gerando apenas as abas de categorias reais */}
+            {uniqueCategories.map((category) => {
               const isMatch = categoriesWithMatches.has(category);
               return (
                 <Badge
