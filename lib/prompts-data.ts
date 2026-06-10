@@ -290,5 +290,4 @@ const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =
   a.localeCompare(b, 'pt-BR')
 );
 
-// 2. ISTO RESOLVE O SEU PROBLEMA: Cria uma lista unificada contendo apenas UM "Todos" no início
-export const uniqueCategories = ["Todos", ...rawCategories];
+
