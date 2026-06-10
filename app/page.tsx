@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react"
 import { SearchBar } from "@/components/search-bar"
 import { PromptCard } from "@/components/prompt-card"
-// Mudamos a importação aqui para usar o uniqueCategories perfeitamente limpo
+// Importação sincronizada perfeitamente com a exportação do prompts-data.ts
 import { prompts, uniqueCategories } from "@/lib/prompts-data"
 import { Badge } from "@/components/ui/badge"
 import { Sparkles } from "lucide-react"
@@ -80,7 +80,7 @@ export default function HomePage() {
               Todos
             </Badge>
             
-            {/* Loop limpo gerando apenas as abas de categorias reais */}
+            {/* Loop gerando apenas as abas de categorias limpas vindas do único array exportado */}
             {uniqueCategories.map((category) => {
               const isMatch = categoriesWithMatches.has(category);
               return (
