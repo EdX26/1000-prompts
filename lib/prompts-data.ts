@@ -63,7 +63,7 @@ export const prompts: Prompt[] = [
     "id": 9,
     "title": "Midjourney: Fotorrealismo Editorial de Luxo",
     "category": "Tecnologia e Engenharia de Prompt",
-    "prompt": "Gere uma string de prompt avançada para o Midjourney v6. O sujeito central deve ser [descreva a scene ou objeto de luxo]. Inclua modificadores técnicos como: estilo fotografia editorial de alta costura, iluminação suave de janela lateral, lente de 85mm f/1.4, profundidade de campo rasa, resolução 8k, --ar 16:9 --style raw."
+    "prompt": "Gere uma string de prompt avançada para o Midjourney v6. O sujeito central deve ser [descreva a scene ou objeto de luxo]. Inclua modificadores técnicos como: estilo fotografia editorial de alta costura, iluminação suave de janela lateral, lente de 85mm f/1.4, profundidade de campo rasa, resolution 8k, --ar 16:9 --style raw."
   },
   {
     "id": 10,
@@ -147,22 +147,24 @@ export const prompts: Prompt[] = [
     "category": "IA Visual",
     "prompt": "Gere uma fotografia macro fotorrealista de um animal da raça [inserir raça, ex: Bulldog Francês]. O foco deve estar cravado de forma cirúrgica nos olhos do bicho, revelando o reflexo da luz ambiente. Destaque detalhadamente a textura dos [pelos/pele no focinho] com iluminação cinematográfica de estúdio e fundo escuro desfocado."
   },
+
+  // --- CATEGORIA INDEPENDENTE: FIGURINHAS DA COPA ---
   {
     "id": 23,
     "title": "Figurinha da Copa: Card Dinâmico de Jogador",
-    "category": "IA Visual",
+    "category": "Crie suas imagens de figurinhas da Copa",
     "prompt": "Desenvolva o design de um card colecionável oficial para o álbum da Copa do Mundo. O jogador [nome do craque ou descrição física] deve estar em uma pose de ação dinâmica de jogo no centro da figurinha. Adicione as bordas geométricas padrão, o brasão da seleção do [país] e a ficha técnica com a posição de [inserir posição]."
   },
   {
     "id": 24,
     "title": "Figurinha da Copa: Fundo Brilhante Holográfico Raro",
-    "category": "IA Visual",
+    "category": "Crie suas imagens de figurinhas da Copa",
     "prompt": "Gere uma arte vetorial focada em criar o plano de fundo de uma figurinha estilo 'Legend' ultra rara para a Copa do Mundo. O cenário do card deve conter texturas metálicas em alto-relevo [dourado/prateado], efeitos de prisma tridimensionais que simulam refração de luz e brilhos holográficos reflexivos de alta fidelidade."
   },
   {
     "id": 25,
     "title": "Figurinha da Copa: Estilo Retrô Vintage Analógico",
-    "category": "IA Visual",
+    "category": "Crie suas imagens de figurinhas da Copa",
     "prompt": "Gere uma imagem simulando um card de futebol colecionável antigo da Copa do Mundo dos anos [70/80]. O layout deve aplicar uma paleta de cores analógicas ligeiramente lavadas, grão de filme sutil, cantos levemente desgastados e uma textura de papel envelhecido que reforce a estética vintage."
   }
 ];
