@@ -29,7 +29,7 @@ export const prompts: Prompt[] = [
     "id": 4,
     "title": "Avaliação de Direitos de Subscrição",
     "category": "Estratégia e Finanças B3",
-    "prompt": "Atue como consultor financeiro. Recebi o direito de subscrição do ativo [inserir ticker] com preço de exercício de R$ [X], enquanto a ação no mercado está cotada a R$ [Y]. Calcule matematicamente se vale a pena exercer o direito, vender o direito no mercado fracionário ou ignorar a oferta, considerando o custo de oportunidade."
+    "prompt": "Atue as a financial advisor. Recebi o direito de subscrição do ativo [inserir ticker] com preço de exercício de R$ [X], enquanto a ação no mercado está cotada a R$ [Y]. Calcule matematicamente se vale a pena exercer o direito, vender o direito no mercado fracionário ou ignorar a oferta, considerando o custo de oportunidade."
   },
   {
     "id": 5,
@@ -83,7 +83,7 @@ export const prompts: Prompt[] = [
     "id": 12,
     "title": "Gancho Magnético nos Primeiros 3 Segundos",
     "category": "Vídeos Curtos (Gemini)",
-    "prompt": "Gere 5 variações de ganchos (hooks) iniciais disruptivos para um vídeo curto sobre [assunto]. Escreva as opções focando em diferentes gatilhos mentais: 1) Curiosidade cega, 2) Polêmica de mercado, 3) Quebra de expectativa, 4) Dor oculta, 5) Benefício imediato."
+    "prompt": "Gere 5 variações de ganchos (hooks) iniciais disruptivos para um vídeo curto sobre [assunto]. Escreva as opções focando in diferentes gatilhos mentais: 1) Curiosidade cega, 2) Polêmica de mercado, 3) Quebra de expectativa, 4) Dor oculta, 5) Benefício imediato."
   },
   {
     "id": 13,
@@ -139,7 +139,7 @@ export const prompts: Prompt[] = [
     "id": 21,
     "title": "Retratos de Animais em Estilo Animação 3D",
     "category": "IA Visual",
-    "prompt": "Crie uma imagem no estilo de animação digital 3D da Pixar. O personagem central deve ser um cachorro da raça [Bulldog Francês/descreva a raça] com uma expression facial [confiante/curiosa]. Adicione acessórios como [um pequeno terno executivo/óculos escuros de sol] e posicione-o em um cenário limpo e minimalista."
+    "prompt": "Crie uma imagem no estilo de animação digital 3D da Pixar. O personagem central deve ser um cachorro da raça [Bulldog Francês/descreva a raça] com uma expressão facial [confiante/curiosa]. Adicione acessórios como [um pequeno terno executivo/óculos escuros de sol] e posicione-o em um cenário limpo e minimalista."
   },
   {
     "id": 22,
@@ -170,4 +170,86 @@ export const prompts: Prompt[] = [
 
   // --- CATEGORIA: COPA DO MUNDO 2026 ---
   {
-    "id": 2
+    "id": 26,
+    "title": "Estrutura Completa de Bolão Corporativo Integrado",
+    "category": "Copa do Mundo 2026",
+    "prompt": "Atue como especialista em Endomarketing. Desenhe o regulamento de um Bolão interno da Copa do Mundo 2026 para uma empresa de [X] colaboradores. Inclua: critérios matemáticos de pontuação (placar exato, saldo, vencedor), regras rígidas de desempate, cronograma de palpites e ideias de prêmios corporativos que sigam as normas de compliance."
+  },
+  {
+    "id": 27,
+    "title": "Marketing de Oportunidade: Campanhas de Real-Time",
+    "category": "Copa do Mundo 2026",
+    "prompt": "Atue como Copywriter Sênior. Crie uma matriz de conteúdo dinâmico para redes sociais focada no marketing de oportunidade durante a Copa do Mundo 2026 para uma marca de [nicho]. Escreva 3 variações de posts rápidos e ganchos de engajamento para os cenários imediatos pós-jogo: 1) Vitória esmagadora, 2) Empate tenso/Disputa de pênaltis, 3) Derrota ou zebra em campo."
+  },
+  {
+    "id": 28,
+    "title": "Mockup Visual: Brindes e Envelopamento Corporativo",
+    "category": "Copa do Mundo 2026",
+    "prompt": "Gere uma engenharia de prompt detalhada para o Midjourney v6 focado em design de produto. O objetivo é criar o design de uma linha premium de brindes corporativos para a Copa do Mundo 2026. Os itens devem incluir [copo térmico/garrafa de alumínio/jaqueta corta-vento] em estilo minimalista de luxo, aplicando as cores da seleção nacional de forma harmônica e espaço para aplicação de logo em alto-relevo fosco."
+  },
+  {
+    "id": 29,
+    "title": "Análise Preditiva e Probabilidade de Confrontos",
+    "category": "Copa do Mundo 2026",
+    "prompt": "Atue como um cientista de dados focado em estatísticas esportivas. Com base no histórico recente de confrontos das seleções do Grupo [X] e no cruzamento de dados de performance ofensiva/defensiva atualizados, monte um modelo lógico de previsão de resultados para a fase de grupos. Aponte estatisticamente onde estão as maiores chances de 'zebra' no campeonato."
+  },
+  {
+    "id": 30,
+    "title": "Gamificação de Vendas com Temática da Copa",
+    "category": "Copa do Mundo 2026",
+    "prompt": "Escreva um plano estratégico de gamificação comercial para uma equipe de vendas B2B bater metas durante os meses da Copa do Mundo 2026. Transforme o pipeline de vendas em um 'campo de jogo': abertura de contas equivale a assistências, fechamento de contratos são gols, e o atingimento do teto da meta confere o título de campeão. Inclua gatilhos de aceleração em dias de jogos da seleção."
+  },
+  {
+    "id": 31,
+    "title": "Ganchos de Engajamento Pós-Jogo da Seleção e Impacto no Bolão",
+    "category": "Copa do Mundo 2026",
+    "prompt": "Atue como Social Media Sênior especialista em viralização. Redija uma matriz de 3 templates de mensagens de alto engajamento para disparar nas redes/comunidades 10 minutos após o apito final do jogo da Seleção Brasileira. Estruture os textos variando o tom emocional para os seguintes cenários de resultados e impacto no Bolão: 1) O Brasil ganhou e você cravou o placar (euforia e call-to-action para prints), 2) O Brasil ganhou mas o resultado foi uma zebra que quebrou o Bolão de todos (humor focado em identificação), 3) O Brasil empatou/perdeu estragando os pontos da rodada (resiliência e foco em recalcular a rota para o próximo jogo)."
+  },
+
+  // --- CATEGORIA: EXCEL-FÓRMULAS-PROCV & PROCX ---
+  {
+    "id": 51,
+    "title": "PROCX com Retorno de Multi-Colunas Não Sequenciais",
+    "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
+    "prompt": "Preciso usar o PROCX para buscar um ID de funcionário e retornar apenas a 'Coluna B (Nome)' e a 'Coluna E (Salário)', pulando as colunas do meio. Mostre como fazer isso combinando o PROCX com a função ESCOLHER-LINS ou chaves matematicamente estruturadas."
+  },
+  {
+    "id": 52,
+    "title": "PROCV Cruzando Duas Planilhas Diferentes",
+    "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
+    "prompt": "Explique o passo a passo de como fazer um PROCV buscar uma informação que está em um arquivo de Excel totalmente diferente e fechado na minha rede. Mostre como fica a sintaxe do caminho do arquivo dentro da fórmula."
+  },
+  {
+    "id": 53,
+    "title": "PROCX para Validação de Cadastros Duplos",
+    "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
+    "prompt": "Como usar o PROCX para comparar a Lista A (clientes antigos) com a Lista B (clientes novos) e me dizer de forma automática quais nomes da Lista B já estavam cadastrados na Lista A, evitando duplicidade?"
+  },
+  {
+    "id": 54,
+    "title": "Unir PROCV com CONCATENAR para Chaves Compostas",
+    "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
+    "prompt": "O PROCV clássico falha se eu tiver dois funcionários chamados 'João Silva'. Mostre o truque de criar uma coluna de apoio unindo duas informações (ex: Nome + Cargo) usando o símbolo '&' para fazer uma busca infalível."
+  },
+  {
+    "id": 55,
+    "title": "PROCX Nativo com Chave Composta",
+    "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
+    "prompt": "Diferente do PROCV, o PROCX aceita chaves compostas sem precisar criar colunas extras na planilha. Mostre como estruturar a busca usando o caractere '&' direto dentro dos argumentos da fórmula (ex: procurar Nome & Cidade)."
+  },
+  {
+    "id": 56,
+    "title": "Converter Números em Texto para Ajustar PROCV",
+    "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
+    "prompt": "Tenho um relatório onde os códigos de produto vieram formatados como texto (com o triângulo verde no canto), mas a minha tabela oficial usa números reais. Mostre como usar a função TEXTO ou o caractere '&' dentro do PROCV para corrigir isso sem mexer na base."
+  },
+  {
+    "id": 57,
+    "title": "PROCX para Achar o Próximo Item Mais Próximo (Abaixo/Acima)",
+    "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
+    "prompt": "Preciso encontrar a alíquota correta do Imposto de Renda baseada no salário recebido. Explique como usar o argumento 'modo_de_correspondência' do PROCX para localizar o valor exato ou, na ausência dele, o próximo menor elemento da tabela."
+  },
+  {
+    "id": 58,
+    "title": "Substituir PROCV por SE+PROCV condicional",
+    "category": "EXCEL-FÓRMULAS-PROCV
