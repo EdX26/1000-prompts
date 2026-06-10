@@ -72,7 +72,7 @@ export const prompts: Prompt[] = [
     "prompt": "Crie un prompt detalhado para gerar um logotipo vetorial em estilo flat design para uma empresa de [nicho de mercado]. O logo deve usar as cores [cor 1] e [cor 2], ser centralizado em um fundo branco sólido, focar na geometria simétrica e não conter textos ou gradientes."
   },
 
-  // --- NOVA CATEGORIA: VÍDEOS CURTOS (GEMINI) ---
+  // --- CATEGORIA: VÍDEOS CURTOS (GEMINI) ---
   {
     "id": 11,
     "title": "Roteiro de Retenção Extrema (Efeito Loop)",
@@ -107,7 +107,63 @@ export const prompts: Prompt[] = [
     "id": 16,
     "title": "Cópia de Anúncio de Alcance Geo-Localizado",
     "category": "Vídeos Curtos (Gemini)",
-    "prompt": "Redija o script falado de um criativo em vídeo para Meta Ads focado em atrair o público empresarial da região de [inserir cidade/bairro]. Use um elemento visual marcante da localidade nos primeiros segundos como gancho de proximidade regional e finalize direcionando para o WhatsApp Business."
+    "prompt": "Redija o script falado de um criativo em vídeo para Meta Ads focado em atrair o público empresarial da região de [inserir cidade/bairro]. Use um elemento visual marcante da localidade nos primeiros seconds como gancho de proximidade regional e finalize direcionando para o WhatsApp Business."
+  },
+
+  // --- CATEGORIA: IA VISUAL ---
+  {
+    "id": 17,
+    "title": "Transformar Desenho ou Rascunho em Imagem 3D",
+    "category": "IA Visual",
+    "prompt": "Atue como um artista de CGI. Converta o rascunho de linhas simples deste [desenho/layout de produto/logotipo] em um render 3D hiper-realista. Aplique uma textura premium de [metal escovado/fibra de carbono/plástico fosco], configure uma iluminação de estúdio com sombras suaves e utilize o plano de fundo na cor [inserir cor]."
+  },
+  {
+    "id": 18,
+    "title": "Lookbook: Alterar Roupas em Fotos de Pessoas",
+    "category": "IA Visual",
+    "prompt": "Utilize a técnica de preenchimento generativo (inpainting) para modificar as roupas do sujeito nesta foto. Substitua o traje atual por um conjunto de moda [executiva sob medida/casual elegante/streetwear premium] nas cores [cor 1] e [cor 2]. Mantenha a fisionomia do rosto, a pose e a iluminação originais intactas."
+  },
+  {
+    "id": 19,
+    "title": "Modificar Cenário de Fundo mantendo a Pessoa",
+    "category": "IA Visual",
+    "prompt": "Mantenha a pessoa desta fotografia perfeitamente isolada e idêntica, sem alterar suas feições ou roupas. Substitua todo o plano de fundo atual por um cenário de [escritório moderno de luxo/avenida urbana movimentada ao anoitecer/lounge corporativo] com profundidade de campo rasa criando um efeito bokeh suave."
+  },
+  {
+    "id": 20,
+    "title": "Transformar Fotos Reais em Desenhos Artísticos",
+    "category": "IA Visual",
+    "prompt": "Redija um comando para transformar esta foto real em uma ilustração artística baseada no estilo [mural de grafite urbano/xilogravura rústica/esboço a lápis de carvão]. O resultado deve manter as linhas de expressão e contornos reconhecíveis do sujeito original, aplicando um contraste marcante de sombras e uma paleta de cores baseada em [tons pastéis/cores neon saturadas]."
+  },
+  {
+    "id": 21,
+    "title": "Retratos de Animais em Estilo Animação 3D",
+    "category": "IA Visual",
+    "prompt": "Crie uma imagem no estilo de animação digital 3D da Pixar. O personagem central deve ser um cachorro da raça [Bulldog Francês/descreva a raça] com uma expressão facial [confiante/curiosa]. Adicione acessórios como [um pequeno terno executivo/óculos escuros de sol] e posicione-o em um cenário limpo e minimalista."
+  },
+  {
+    "id": 22,
+    "title": "Retrato de Animal Realista com Luz Macro",
+    "category": "IA Visual",
+    "prompt": "Gere uma fotografia macro fotorrealista de um animal da raça [inserir raça, ex: Bulldog Francês]. O foco deve estar cravado de forma cirúrgica nos olhos do bicho, revelando o reflexo da luz ambiente. Destaque detalhadamente a textura dos [pelos/pele no focinho] com iluminação cinematográfica de estúdio e fundo escuro desfocado."
+  },
+  {
+    "id": 23,
+    "title": "Figurinha da Copa: Card Dinâmico de Jogador",
+    "category": "IA Visual",
+    "prompt": "Desenvolva o design de um card colecionável oficial para o álbum da Copa do Mundo. O jogador [nome do craque ou descrição física] deve estar em uma pose de ação dinâmica de jogo no centro da figurinha. Adicione as bordas geométricas padrão, o brasão da seleção do [país] e a ficha técnica com a posição de [inserir posição]."
+  },
+  {
+    "id": 24,
+    "title": "Figurinha da Copa: Fundo Brilhante Holográfico Raro",
+    "category": "IA Visual",
+    "prompt": "Gere uma arte vetorial focada em criar o plano de fundo de uma figurinha estilo 'Legend' ultra rara para a Copa do Mundo. O cenário do card deve conter texturas metálicas em alto-relevo [dourado/prateado], efeitos de prisma tridimensionais que simulam refração de luz e brilhos holográficos reflexivos de alta fidelidade."
+  },
+  {
+    "id": 25,
+    "title": "Figurinha da Copa: Estilo Retrô Vintage Analógico",
+    "category": "IA Visual",
+    "prompt": "Gere uma imagem simulando um card de futebol colecionável antigo da Copa do Mundo dos anos [70/80]. O layout deve aplicar uma paleta de cores analógicas ligeiramente lavadas, grão de filme sutil, cantos levemente desgastados e uma textura de papel envelhecido que reforce a estética vintage."
   }
 ];
 
