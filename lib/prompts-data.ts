@@ -327,6 +327,27 @@ export const prompts: Prompt[] = [
     "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
     "prompt": "Preciso encontrar todos os dados cadastrais mapeados de usuários que utilizam o domínio corporativo '@empresa.com'. Mostre como setar o modo de caracteres curinga no PROCX para varrer colunas de contatos textuais parciais."
   }
+,
+
+  // --- CATEGORIA: TREND PROMPTS DA SEMANA ---
+  {
+    "id": 71,
+    "title": "Ideias e Lista para Churrasco pós-Jogo da Seleção",
+    "category": "Trend Prompts da Semana",
+    "prompt": "Planeje um churrasco completo para [X] pessoas comemorando a vitória do Brasil na Copa. Monte a lista de compras exata (carnes, acompanhamentos e bebidas) e sugira 3 brincadeiras rápidas de resenha para engajar a galera após o apito final."
+  },
+  {
+    "id": 72,
+    "title": "Regras Rápidas para Bolão de Amigos ou Firma",
+    "category": "Trend Prompts da Semana",
+    "prompt": "Crie um modelo simplificado de Bolão da Copa para rodar no WhatsApp com amigos. Defina uma pontuação clara (placar exato, acertar vencedor, acertar gols) e uma regra de desempate justa que evite brigas no grupo."
+  },
+  {
+    "id": 73,
+    "title": "Post de Humor: Minha Seleção Ganhou, mas meu Bolão Perdeu",
+    "category": "Trend Prompts da Semana",
+    "prompt": "Escreva um roteiro de vídeo curto (Reels/TikTok) de 15 segundos usando o humor sobre a Copa. O tema é a sensação de comemorar a vitória do Brasil, mas perceber que o gol no final destruiu o seu palpite no bolão."
+  }
 ];
 
 // Mapeamento automático de categorias únicas em ordem alfabética local (BR)
