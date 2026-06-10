@@ -107,7 +107,7 @@ export const prompts: Prompt[] = [
     "id": 16,
     "title": "Cópia de Anúncio de Alcance Geo-Localizado",
     "category": "Vídeos Curtos (Gemini)",
-    "prompt": "Redija o script falado de um criativo em vídeo para Meta Ads focado em atrair o público empresarial da região de [inserir cidade/bairro]. Use um elemento visual marcante da localidade nos primeiros seconds como gancho de proximidade regional e finalize direcionando para o WhatsApp Business."
+    "prompt": "Redija o script falado de um criativo em vídeo para Meta Ads focado em atrair o público empresarial da região de [inserir cidade/bairro]. Use um element visual marcante da localidade nos primeiros seconds como gancho de proximidade regional e finalize direcionando para o WhatsApp Business."
   },
 
   // --- CATEGORIA: IA VISUAL ---
@@ -199,6 +199,12 @@ export const prompts: Prompt[] = [
     "category": "Copa do Mundo 2026",
     "prompt": "Escreva um plano estratégico de gamificação comercial para uma equipe de vendas B2B bater metas durante os meses da Copa do Mundo 2026. Transforme o pipeline de vendas em um 'campo de jogo': abertura de contas equivale a assistências, fechamento de contratos são gols, e o atingimento do teto da meta confere o título de campeão. Inclua gatilhos de aceleração em dias de jogos da seleção."
   },
+  {
+    "id": 31,
+    "title": "Ganchos de Engajamento Pós-Jogo da Seleção e Impacto no Bolão",
+    "category": "Copa do Mundo 2026",
+    "prompt": "Atue como Social Media Sênior especialista em viralização. Redija uma matriz de 3 templates de mensagens de alto engajamento para disparar nas redes/comunidades 10 minutos após o apito final do jogo da Seleção Brasileira. Estruture os textos variando o tom emocional para os seguintes cenários de resultados e impacto no Bolão: 1) O Brasil ganhou e você cravou o placar (euforia e call-to-action para prints), 2) O Brasil ganhou mas o resultado foi uma zebra que quebrou o Bolão de todos (humor focado em identificação), 3) O Brasil empatou/perdeu estragando os pontos da rodada (resiliência e foco em recalcular a rota para o próximo jogo)."
+  },
 
   // --- COMPLEMENTO DA CATEGORIA: EXCEL-FÓRMULAS-PROCV & PROCX ---
   {
@@ -211,7 +217,7 @@ export const prompts: Prompt[] = [
     "id": 52,
     "title": "PROCV Cruzando Duas Planilhas Diferentes",
     "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
-    "prompt": "Explique o passo a passo de como fazer um PROCV buscar uma informação que está em um arquivo de Excel totalmente diferente e fechado na minha rede. Mostre como fica a sintaxe do caminho do arquivo dentro da fórmula."
+    "prompt": "Explique o passo a passo de como fazer um PROCV buscar uma informação que está em um arquivo de Excel totalmente diferente e fechado na minha rede. Mostre como fica a sintaxe do caminho do arquivo dentro da dúvida."
   },
   {
     "id": 53,
@@ -247,7 +253,7 @@ export const prompts: Prompt[] = [
     "id": 58,
     "title": "Substituir PROCV por SE+PROCV condicional",
     "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
-    "prompt": "Tenho duas tabelas de preços distintas: uma para o 'Ano 2024' e outra para o 'Ano 2025'. Mostre como usar a função SE para decidir qual PROCV deve ser executado com base no ano digitado in uma célula de controle."
+    "prompt": "Tenho duas tabelas de preços distintas: uma para o 'Ano 2024' e outra para o 'Ano 2025'. Mostre como usar a função SE para decidir qual PROCV deve ser executado com base no ano digitado em uma célula de controle."
   },
   {
     "id": 59,
@@ -289,7 +295,7 @@ export const prompts: Prompt[] = [
     "id": 65,
     "title": "A Lógica Flexível da Função OU junto ao SE",
     "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
-    "prompt": "Monte uma fórmula usando SE e OU para disparar alertas de estoque: se a quantidade do produto for menor que 10 unidades OU se a data de validade estiver vencida, a célula deve escrever 'REPOR IMEDIATAMENTE'."
+    "prompt": "Monte uma fórmula usando SE and OU para disparar alertas de estoque: se a quantidade do produto for menor que 10 unidades OU se a data de validade estiver vencida, a célula deve escrever 'REPOR IMEDIATAMENTE'."
   },
   {
     "id": 66,
@@ -323,10 +329,8 @@ export const prompts: Prompt[] = [
   }
 ] as const;
 
-// 1. Extrai apenas as categorias reais do banco de dados (em ordem alfabética)
-const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) => 
+// Mapeamento automático de categorias únicas em ordem alfabética local (BR)
+// ATENÇÃO: Deixando APENAS as categorias reais. O seu botão fixo "Todos" comandará a tela!
+export const uniqueCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) => 
   a.localeCompare(b, 'pt-BR')
 );
-
-// 2. Cria a lista estrita de abas injetando apenas UM "Todos" na primeira posição
-export const uniqueCategories = ["Todos", ...rawCategories];
