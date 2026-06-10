@@ -296,5 +296,4 @@ const uniqueCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b
   a.localeCompare(b, 'pt-BR')
 );
 
-// Adiciona o termo global "Todos" no início do array gerado para facilitação de UI/Filtros
-export const categories = ["Todos", ...uniqueCategories];
+
