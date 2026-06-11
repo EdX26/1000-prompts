@@ -92,6 +92,7 @@ export default function HomePage() {
                   } ${!isMatch && searchQuery.trim() !== "" ? "opacity-40" : "opacity-100"}`}
                   onClick={() => setSelectedCategory(category)}
                 >
+                  style={category === "Trend Prompts da Semana" ? { backgroundColor: "#009c3b", color: "#ffdf00", borderColor: "#ffdf00" } : {}}
                   {isMatch && <Sparkles className="h-3 w-3 mr-1 inline" />}
                   {category}
                 </Badge>
