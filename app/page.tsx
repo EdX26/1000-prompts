@@ -81,10 +81,37 @@ export default function HomePage() {
             
             {uniqueCategories.map((category) => {
               const isMatch = categoriesWithMatches.has(category);
+              const isTrend = category.toLowerCase().includes("trend") || category.toLowerCase().includes("tendencia");
+              
+              // Estilização dinâmica forçada via Inline Style para evitar conflitos do Tailwind/Shadcn
+              let badgeStyle = {};
+              let variantType: "default" | "secondary" | "outline" = selectedCategory === category ? "default" : "secondary";
+
+              if (isTrend) {
+                variantType = "outline"; // Libera o fundo para ser pintado manualmente
+                if (selectedCategory === category) {
+                  // Estado Selecionado: Verde Seleção + Letras Amarelas Ouro
+                  badgeStyle = { 
+                    backgroundColor: "#009c3b", 
+                    color: "#ffdf00", 
+                    borderColor: "#ffdf00",
+                    fontWeight: "bold"
+                  };
+                } else {
+                  // Estado Inativo: Fundo Verde Escuro + Texto Verde Claro
+                  badgeStyle = { 
+                    backgroundColor: "#002f11", 
+                    color: "#5cd684", 
+                    borderColor: "#005c23" 
+                  };
+                }
+              }
+
               return (
                 <Badge
                   key={category}
-                  variant={selectedCategory === category ? "default" : "secondary"}
+                  variant={variantType}
+                  style={badgeStyle}
                   className={`cursor-pointer px-4 py-2 text-sm transition-all duration-300 ${
                     isMatch && selectedCategory !== category 
                       ? "ring-2 ring-primary ring-offset-2 ring-offset-background scale-105 shadow-lg" 
@@ -92,8 +119,11 @@ export default function HomePage() {
                   } ${!isMatch && searchQuery.trim() !== "" ? "opacity-40" : "opacity-100"}`}
                   onClick={() => setSelectedCategory(category)}
                 >
-                  style={category === "Trend Prompts da Semana" ? { backgroundColor: "#009c3b", color: "#ffdf00", borderColor: "#ffdf00" } : {}}
-                  {isMatch && <Sparkles className="h-3 w-3 mr-1 inline" />}
+                  {isTrend ? (
+                    <Sparkles className="h-3 w-3 mr-1 inline text-[#ffdf00] fill-[#ffdf00] animate-pulse" />
+                  ) : (
+                    isMatch && <Sparkles className="h-3 w-3 mr-1 inline" />
+                  )}
                   {category}
                 </Badge>
               );
