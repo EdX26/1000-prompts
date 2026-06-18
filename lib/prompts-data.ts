@@ -347,9 +347,7 @@ export const prompts: Prompt[] = [
     "title": "Post de Humor: Minha Seleção Ganhou, mas meu Bolão Perdeu",
     "category": "Trend Prompts da Semana",
     "prompt": "Escreva um roteiro de vídeo curto (Reels/TikTok) de 15 segundos usando o humor sobre a Copa. O tema é a sensação de comemorar a vitória do Brasil, mas perceber que o gol no final destruiu o seu palpite no bolão."
-  }
-];
-},
+  },
   {
     id: 74,
     title: "Estrategista de Economia e Preço Mais Baixo",
