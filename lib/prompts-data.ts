@@ -359,3 +359,33 @@ const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =
 export const uniqueCategories = rawCategories.filter(
   (category) => category.toLowerCase() !== "todos"
 );
+// BANCO DE DADOS DOS NOVOS PROMPTS INTEGRADOS AO SEU SITE
+export const shoppingPrompts = [
+  {
+    id: "analista-oportunidades-compra",
+    title: "O Analista de Oportunidades de Compra",
+    description: "Instrui a IA a mapear os principais e-commerces, analisar o contexto de preço e dar um veredito real de custo-benefício.",
+    category: "Compras & Consumo Inteligente",
+    isTrend: true,
+    placeholder: "[NOME DO PRODUTO]",
+    content: "Atue como um analista de compras especialista em e-commerce brasileiro. Quero comprar o produto [NOME DO PRODUTO]. Faça uma varredura nos principais marketplaces confiáveis (como Amazon BR, Mercado Livre e Magalu) e me informe: 1) Onde encontrar o menor preço base atual. 2) Se o preço parece estar em uma alta ou baixa histórica nos últimos meses. 3) Avisos de reputação sobre o vendedor. No final, dê o veredito simples: 'Comprar agora', 'Esperar' ou 'Buscar alternativa'."
+  },
+  {
+    id: "engenheiro-alternativas-custo-beneficio",
+    title: "O Engenheiro de Alternativas de Alto Valor",
+    description: "Encontra marcas concorrentes ocultas ou versions anteriores que entregam a mesma função por um preço muito menor.",
+    category: "Compras & Consumo Inteligente",
+    isTrend: false,
+    placeholder: "[NOME DO PRODUTO]",
+    content: "Quero comprar o produto [NOME DO PRODUTO], mas preciso avaliar opções mais baratas que entreguem a mesma especificação técnica central. Analise as funções principais desse item e liste até 3 produtos concorrentes ou marcas alternativas focadas em excelente custo-benefício. Mostre o que muda no hardware/construção e o percentual estimado de economia."
+  },
+  {
+    id: "localizador-cupons-beneficios",
+    title: "O Localizador de Cupons e Benefícios Ativos",
+    description: "Força a IA a varrer agregadores atrás de cupons de desconto, cashback ou combos ativos para o produto.",
+    category: "Achados & Cupons de IA",
+    isTrend: false,
+    placeholder: "[NOME DO PRODUTO]",
+    content: "Estou prestes a fechar a compra de [NOME DO PRODUTO]. Antes de eu pagar, faça uma busca na internet por cupons de desconto ativos, links de cashback ou promoções do tipo 'leve mais por menos' para este item específico ou para as principais lojas que o vendem. Liste apenas fontes conhecidas e me diga qual é a combinação ideal para maximizar minha economia hoje."
+  }
+];
