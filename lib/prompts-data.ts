@@ -359,7 +359,9 @@ const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =
 export const uniqueCategories = rawCategories.filter(
   (category) => category.toLowerCase() !== "todos"
 );
-// BANCO DE DADOS DOS NOVOS PROMPTS INTEGRADOS AO SEU SITE
+// =========================================================================
+// BANCO DE DADOS DE PROMPTS (COMPLEMENTADO COM COMPRAS & CONSUMO)
+// =========================================================================
 export const shoppingPrompts = [
   {
     id: "analista-oportunidades-compra",
@@ -373,7 +375,7 @@ export const shoppingPrompts = [
   {
     id: "engenheiro-alternativas-custo-beneficio",
     title: "O Engenheiro de Alternativas de Alto Valor",
-    description: "Encontra marcas concorrentes ocultas ou versions anteriores que entregam a mesma função por um preço muito menor.",
+    description: "Encontra marcas concorrentes ocultas ou versões anteriores que entregam a mesma função por um preço muito menor.",
     category: "Compras & Consumo Inteligente",
     isTrend: false,
     placeholder: "[NOME DO PRODUTO]",
@@ -389,3 +391,14 @@ export const shoppingPrompts = [
     content: "Estou prestes a fechar a compra de [NOME DO PRODUTO]. Antes de eu pagar, faça uma busca na internet por cupons de desconto ativos, links de cashback ou promoções do tipo 'leve mais por menos' para este item específico ou para as principais lojas que o vendem. Liste apenas fontes conhecidas e me diga qual é a combinação ideal para maximizar minha economia hoje."
   }
 ];
+
+// Mapeia as novas categorias automaticamente para não quebrar seu front-end
+const newCategories = shoppingPrompts.map(prompt => prompt.category);
+
+// Junta suas categorias antigas com as novas tirando as duplicadas
+const updatedRawCategories = Array.from(new Set([...rawCategories, ...newCategories]));
+
+// Exportação blindada que remove qualquer palavra "todos" para não duplicar no front
+export const uniqueCategories = updatedRawCategories.filter(
+  (category) => category.toLowerCase() !== "todos"
+);
