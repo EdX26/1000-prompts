@@ -359,8 +359,7 @@ const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =
 export const uniqueCategories = rawCategories.filter(
   (category) => category.toLowerCase() !== "todos"
 );
-prompts.push(
-  {
+{
     id: 74,
     title: "O Analista de Oportunidades de Compra",
     category: "Compras & Consumo Inteligente",
