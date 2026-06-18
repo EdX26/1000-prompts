@@ -146,22 +146,19 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {filteredPrompts.map((prompt) => {
                 const isBonusCard = prompt.id === 108;
-                
-                // Estilo inline dourado premium injetado se for o card da dica
-                const goldCardStyle = isBonusCard ? {
-                  backgroundColor: "rgba(245, 158, 11, 0.08)",
-                  borderColor: "#f59e0b",
-                  boxShadow: "0 0 20px rgba(245, 158, 11, 0.2)"
-                } : undefined;
 
                 return (
-                  <div key={prompt.id} style={goldCardStyle} className={isBonusCard ? "rounded-lg border" : ""}>
-                    <PromptCard
-                      title={prompt.title}
-                      prompt={prompt.prompt}
-                      category={prompt.category}
-                    />
-                  </div>
+                  <PromptCard
+                    key={prompt.id}
+                    title={prompt.title}
+                    prompt={prompt.prompt}
+                    category={prompt.category}
+                    className={
+                      isBonusCard 
+                        ? "!bg-amber-500/10 !border-amber-500 shadow-[0_0_20px_rgba(245,158,11,0.3)] scale-[1.02]" 
+                        : ""
+                    }
+                  />
                 );
               })}
             </div>
