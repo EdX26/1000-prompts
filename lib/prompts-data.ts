@@ -349,26 +349,32 @@ export const prompts: Prompt[] = [
     "prompt": "Escreva um roteiro de vídeo curto (Reels/TikTok) de 15 segundos usando o humor sobre a Copa. O tema é a sensação de comemorar a vitória do Brasil, mas perceber que o gol no final destruiu o seu palpite no bolão."
   }
 ];
-id: 73,
-{
+},
+  {
     id: 74,
-    title: "O Analista de Oportunidades de Compra",
-    category: "Compras & Consumo Inteligente",
-    prompt: "Atue como um analista de compras especialista em e-commerce brasileiro. Quero comprar o produto [NOME DO PRODUTO]. Faça uma varredura nos principais marketplaces confiáveis (como Amazon BR, Mercado Livre e Magalu) e me informe: 1) Onde encontrar o menor preço base atual. 2) Se o preço parece estar em uma alta ou baixa histórica nos últimos meses. 3) Avisos de reputação sobre o vendedor. No final, dê o veredito simples: 'Comprar agora', 'Esperar' ou 'Buscar alternativa'."
+    title: "Estrategista de Economia e Preço Mais Baixo",
+    category: "Compras e Consumo Inteligente",
+    prompt: "Atue como um assistente de compras experiente. Quero adquirir o produto [NOME DO PRODUTO]. Varra as principais plataformas de e-commerce brasileiras confiáveis e me apresente uma tabela comparativa com o menor preço encontrado, estimativa de frete para a minha região e alertas caso o vendedor ou a loja escolhida possuam muitas avaliações negativas ou atrasos crônicos nas entregas."
   },
   {
     id: 75,
-    title: "O Engenheiro de Alternativas de Alto Valor",
-    category: "Compras & Consumo Inteligente",
-    prompt: "Quero comprar o produto [NOME DO PRODUTO], mas preciso avaliar opções mais baratas que entreguem a mesma especificação técnica central. Analise as funções principais desse item e liste até 3 produtos concorrentes ou marcas alternativas focadas em excelente custo-benefício. Mostre o que muda no hardware/construção e o percentual estimado de economia."
+    title: "Rastreador de Ofertas Ocultas e Cashback",
+    category: "Achados e Cupons de IA",
+    prompt: "Estou finalizando a compra de [NOME DO PRODUTO] e quero garantir o máximo de desconto possível. Procure ativamente por cupons promocionais válidos, campanhas de cashback acumulativo ou ofertas de combos (leve mais por menos) que estejam ativos neste momento para este produto específico nas principais lojas da internet. Indique a estratégia ideal para fechar o carrinho com a maior economia."
   },
   {
     id: 76,
-    title: "O Localizador de Cupons e Benefícios Ativos",
-    category: "Achados & Cupons de IA",
-    prompt: "Estou prestes a fechar a compra de [NOME DO PRODUTO]. Antes de eu pagar, faça uma busca na internet por cupons de desconto ativos, links de cashback ou promoções do tipo 'leve mais por menos' para este item específico ou para as principais lojas que o vendem. Liste apenas fontes conhecidas e me diga qual é a combinação ideal para maximizar minha economia hoje."
+    title: "Analista de Histórico e Tendência de Preço",
+    category: "Compras e Consumo Inteligente",
+    prompt: "Analise o comportamento de mercado do produto [NOME DO PRODUTO]. Com base nas informações e dados públicos disponíveis na web, determine se o valor cobrado por ele hoje está acima da média, na média ou se representa uma queda real em relação aos últimos meses. Me dê um direcionamento claro se a recomendação técnica é comprar imediatamente ou aguardar uma janela melhor de descontos."
+  },
+  {
+    id: 77,
+    title: "Mapeador de Concorrentes e Custo-Benefício",
+    category: "Compras e Consumo Inteligente",
+    prompt: "Desejo comprar o produto [NOME DO PRODUTO], porém gostaria de avaliar opções mais econômicas antes de fechar o pedido. Analise as características técnicas, especificações de hardware e funções principais desse modelo e me sugira até 3 produtos alternativos de marcas concorrentes ou versões anteriores que entreguem o mesmo benefício central com uma redução de preço de pelo menos 20%."
   }
-);
+];
 
 const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) => 
   a.localeCompare(b, 'pt-BR')
