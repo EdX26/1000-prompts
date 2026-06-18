@@ -27,11 +27,11 @@ export default function HomePage() {
     return new Set(matches.map(p => p.category));
   }, [searchQuery]);
 
-  // 2. Filtra os prompts para exibição
+  // 2. Filtra os prompts para exibição e joga o card 108 para o topo
   const filteredPrompts = useMemo(() => {
     const queryNorm = normalize(searchQuery);
 
-    return prompts.filter((prompt) => {
+    const result = prompts.filter((prompt) => {
       const matchesSearch =
         normalize(prompt.title).includes(queryNorm) ||
         normalize(prompt.prompt).includes(queryNorm) ||
@@ -40,6 +40,13 @@ export default function HomePage() {
       const matchesCategory = !selectedCategory || prompt.category === selectedCategory;
 
       return matchesSearch && matchesCategory;
+    });
+
+    // Ordenação cirúrgica: se o card 108 estiver na lista, ele ganha prioridade máxima no topo
+    return [...result].sort((a, b) => {
+      if (a.id === 108) return -1;
+      if (b.id === 108) return 1;
+      return 0;
     });
   }, [searchQuery, selectedCategory])
 
@@ -137,14 +144,26 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           {filteredPrompts.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {filteredPrompts.map((prompt) => (
-                <PromptCard
-                  key={prompt.id}
-                  title={prompt.title}
-                  prompt={prompt.prompt}
-                  category={prompt.category}
-                />
-              ))}
+              {filteredPrompts.map((prompt) => {
+                const isBonusCard = prompt.id === 108;
+                
+                // Estilo inline dourado premium injetado se for o card da dica
+                const goldCardStyle = isBonusCard ? {
+                  backgroundColor: "rgba(245, 158, 11, 0.08)",
+                  borderColor: "#f59e0b",
+                  boxShadow: "0 0 20px rgba(245, 158, 11, 0.2)"
+                } : undefined;
+
+                return (
+                  <div key={prompt.id} style={goldCardStyle} className={isBonusCard ? "rounded-lg border" : ""}>
+                    <PromptCard
+                      title={prompt.title}
+                      prompt={prompt.prompt}
+                      category={prompt.category}
+                    />
+                  </div>
+                );
+              })}
             </div>
           ) : (
             <div className="text-center py-16">
