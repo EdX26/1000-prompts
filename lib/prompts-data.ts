@@ -491,6 +491,66 @@ export const prompts: Prompt[] = [
     title: "O Transformador de Áudio ou Vídeo em Texto Limpo",
     category: "Gemini: Resumos Rápidos & Dicas",
     prompt: "Recebi este vídeo/áudio longo e não posso assistir agora: [COLE A TRANSCRIÇÃO]. Por favor, leia tudo o que foi falado e transforme em um texto curto, limpo e organizado em tópicos simples. Remova as repetições de palavras, gírias excessivas e vá direto ao ponto, para que eu consiga entender toda a história ou explicação lendo em menos de 1 minuto."
+  },
+  {
+    id: 98,
+    title: "A Carta de Reclamação Procon (Produto com Defeito)",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Comprei um produto que veio com defeito, a empresa está enrolando para resolver e quero registrar uma reclamação formal no Procon: [COLE O NOME DO PRODUTO, DA LOJA E O PROBLEMA]. Atue como um specialist em direitos do consumidor e redija uma carta clara, firme e baseada no Código de Defesa do Consumidor, exigindo a troca, o conserto ou a devolução do meu dinheiro."
+  },
+  {
+    id: 99,
+    title: "O Cancelamento de Serviço Sem Multa",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Quero cancelar um serviço (como internet, telefone ou academia), mas eles estão querendo me cobrar uma multa de fidelidade abusiva, mesmo o serviço tendo apresentado falhas constantes: [EXPLIQUE AS FALHAS DO SERVIÇO E O NOME DA EMPRESA]. Crie um texto de solicitação de cancelamento exigindo a isenção da multa contratual devido ao descumprimento do serviço por parte deles."
+  },
+  {
+    id: 100,
+    title: "O Pedido de Reconsideração no Banco",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Apareceu uma cobrança de tarifa de manutenção de conta ou anuidade que eu não concordo no meu extrato bancário: [DADOS DA TARIFA E DO BANCO]. Escreva uma mensagem curta e educada para eu enviar ao meu gerente ou pelo chat do aplicativo, solicitando o estorno do valor e explicando que sou um cliente antigo e pretendo manter um bom relacionamento com a instituição."
+  },
+  {
+    id: 101,
+    title: "O Requerimento Simples para a Prefeitura",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Preciso pedir para a prefeitura resolver um problema estrutural na minha rua ou bairro: [DIGITE O PROBLEMA, EX: BURACO NA RUA, ILUMINAÇÃO QUEBRADA OU PODA DE ÁRVORE]. Monte um requerimento simples e formal contendo os fatos e a solicitação do serviço, pronto para eu protocolar no site da prefeitura ou na subprefeitura da minha região."
+  },
+  {
+    id: 102,
+    title: "A Notificação de Cobrança Amigável",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Sou trabalhador autônomo/prestador de serviço e um cliente está atrasado com o meu pagamento há dias: [NOME DO CLIENTE E VALOR DEVIDO]. Escreva uma mensagem de cobrança que seja formal, profissional e amigável, lembrando do prazo vencido e fornecendo os dados para pagamento, mantendo o respeito para não fechar as portas com esse cliente."
+  },
+  {
+    id: 103,
+    title: "O Tradutor de Contrato de Aluguel",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Estou prestes a assinar um contrato de aluguel ou recebi um termo e achei as cláusulas muito difíceis de entender: [COLE O TEXTO DO CONTRATO OU A CLÁUSULA CONFUSA]. Traduza esse texto jurídico para o português do dia a dia, me explicando de forma bem simples quais são as minhas obrigações e se existe algum risco ou pegadinha oculta ali."
+  },
+  {
+    id: 104,
+    title: "O Pedido de Reconformação de Viagem/Voo",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Tive um problema com uma viagem (como voo cancelado, atraso absurdo ou mala extraviada) e a empresa de transporte não quer me indenizar corretamente: [EXPLIQUE O QUE ACONTECEU E O NOME DA EMPRESA]. Crie uma carta de reclamação exigindo o reembolso das despesas ou a indenização devida, citando de forma firme que eles são responsáveis pelo transtorno causado."
+  },
+  {
+    id: 105,
+    title: "O Recurso de Multa de Trânsito Simples",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Recebi uma multa de trânsito injusta ou que possui um erro claro na notificação (como a cor do carro errada ou endereço incorreto): [DETALHES DA MULTA E SEU ARGUMENTO]. Monte uma defesa prévia simples e bem estruturada para eu enviar ao órgão de trânsito competente, explicando o motivo pelo qual a multa deve ser cancelada."
+  },
+  {
+    id: 106,
+    title: "A Carta de Demissão Sem Climão",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Decidi pedir demissão do meu emprego atual para seguir novos caminhos e preciso entregar a carta formal de demissão: [NOME DA EMPRESA E SEU CARGO]. Escreva uma carta curta, elegante e profissional para o setor de Recursos Humanos, comunicando a minha saída, agradecendo pela oportunidade e informando se vou ou não cumprir o aviso prévio."
+  },
+  {
+    id: 107,
+    title: "O Pedido de Isenção ou Desconto de Taxas",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Preciso pedir a isenção de uma taxa de inscrição ou desconto em juros de uma conta atrasada por motivos de força maior (como desemprego ou doença na família): [EXPLIQUE A SUA SITUACÃO E A TAXA]. Escreva uma justificativa formal e respeitável para eu enviar à instituição, explicando a minha real condição e solicitando a flexibilização do valor."
   }
 ];
 
