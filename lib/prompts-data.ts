@@ -372,8 +372,6 @@ export const prompts: Prompt[] = [
     category: "Compras e Consumo Inteligente",
     prompt: "Desejo comprar o produto [NOME DO PRODUTO], porém gostaria de avaliar opções mais econômicas antes de fechar o pedido. Analise as características técnicas, especificações de hardware e funções principais desse modelo e me sugira até 3 produtos alternativos de marcas concorrentes ou versões anteriores que entreguem o mesmo benefício central com uma redução de preço de pelo menos 20%."
   },
-prompt: "Desejo comprar o produto [NOME DO PRODUTO], porém gostaria de avaliar opções mais econômicas antes de fechar o pedido. Analise as características técnicas, especificações de hardware e funções principais desse modelo e me sugira até 3 produtos alternativos de marcas concorrentes ou versões anteriores que entreguem o mesmo benefício central com uma redução de preço de pelo menos 20%."
-  },
   {
     id: 78,
     title: "O Redator Literário de Longo Formato",
