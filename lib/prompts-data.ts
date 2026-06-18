@@ -359,4 +359,22 @@ const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =
 export const uniqueCategories = rawCategories.filter(
   (category) => category.toLowerCase() !== "todos"
 );
+{
+    id: 74,
+    title: "O Analista de Oportunidades de Compra",
+    category: "Compras & Consumo Inteligente",
+    prompt: "Atue como um analista de compras especialista em e-commerce brasileiro. Quero comprar o produto [NOME DO PRODUTO]. Faça uma varredura nos principais marketplaces confiáveis (como Amazon BR, Mercado Livre e Magalu) e me informe: 1) Onde encontrar o menor preço base atual. 2) Se o preço parece estar em uma alta ou baixa histórica nos últimos meses. 3) Avisos de reputação sobre o vendedor. No final, dê o veredito simples: 'Comprar agora', 'Esperar' ou 'Buscar alternativa'."
+  },
+  {
+    id: 75,
+    title: "O Engenheiro de Alternativas de Alto Valor",
+    category: "Compras & Consumo Inteligente",
+    prompt: "Quero comprar o produto [NOME DO PRODUTO], mas preciso avaliar opções mais baratas que entreguem a mesma especificação técnica central. Analise as funções principais desse item e liste até 3 produtos concorrentes ou marcas alternativas focadas em excelente custo-benefício. Mostre o que muda no hardware/construção e o percentual estimado de economia."
+  },
+  {
+    id: 76,
+    title: "O Localizador de Cupons e Benefícios Ativos",
+    category: "Achados & Cupons de IA",
+    prompt: "Estou prestes a fechar a compra de [NOME DO PRODUTO]. Antes de eu pagar, faça uma busca na internet por cupons de desconto ativos, links de cashback ou promoções do tipo 'leve mais por menos' para este item específico ou para as principais lojas que o vendem. Liste apenas fontes conhecidas e me diga qual é a combinação ideal para maximizar minha economia hoje."
+  }
 
