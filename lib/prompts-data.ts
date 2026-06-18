@@ -359,7 +359,8 @@ const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =
 export const uniqueCategories = rawCategories.filter(
   (category) => category.toLowerCase() !== "todos"
 );
-{
+prompts.push(
+  {
     id: 74,
     title: "O Analista de Oportunidades de Compra",
     category: "Compras & Consumo Inteligente",
@@ -377,4 +378,12 @@ export const uniqueCategories = rawCategories.filter(
     category: "Achados & Cupons de IA",
     prompt: "Estou prestes a fechar a compra de [NOME DO PRODUTO]. Antes de eu pagar, faça uma busca na internet por cupons de desconto ativos, links de cashback ou promoções do tipo 'leve mais por menos' para este item específico ou para as principais lojas que o vendem. Liste apenas fontes conhecidas e me diga qual é a combinação ideal para maximizar minha economia hoje."
   }
+);
 
+const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) => 
+  a.localeCompare(b, 'pt-BR')
+);
+
+export const uniqueCategories = rawCategories.filter(
+  (category) => category.toLowerCase() !== "todos"
+);
