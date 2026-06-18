@@ -350,16 +350,7 @@ export const prompts: Prompt[] = [
   }
 ];
 id: 73,
-    title: "Post de Humor: Minha Seleção Ganhou, mas meu Bolão Perdeu",
-    category: "Trend Prompts da Semana",
-    prompt: "Escreva um roteiro de vídeo curto (Reels/TikTok) de 15 segundos usando o humor sobre a Copa. O tema é a sensação de comemorar a vitória do Brasil, mas perceber que o gol no final destruiu o seu palpite no bolão."
-  } // <-- O ID 73 termina aqui.
-]; // <-- O colchete original que fecha a lista de prompts fica aqui.
-
-// DAQUI EM DIANTE É ONDE VOCÊ COLA O BLOCO NOVO (Substituindo as linhas 353 a 381):
-
-prompts.push(
-  {
+{
     id: 74,
     title: "O Analista de Oportunidades de Compra",
     category: "Compras & Consumo Inteligente",
