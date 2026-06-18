@@ -371,6 +371,68 @@ export const prompts: Prompt[] = [
     title: "Mapeador de Concorrentes e Custo-Benefício",
     category: "Compras e Consumo Inteligente",
     prompt: "Desejo comprar o produto [NOME DO PRODUTO], porém gostaria de avaliar opções mais econômicas antes de fechar o pedido. Analise as características técnicas, especificações de hardware e funções principais desse modelo e me sugira até 3 produtos alternativos de marcas concorrentes ou versões anteriores que entreguem o mesmo benefício central com uma redução de preço de pelo menos 20%."
+  },
+prompt: "Desejo comprar o produto [NOME DO PRODUTO], porém gostaria de avaliar opções mais econômicas antes de fechar o pedido. Analise as características técnicas, especificações de hardware e funções principais desse modelo e me sugira até 3 produtos alternativos de marcas concorrentes ou versões anteriores que entreguem o mesmo benefício central com uma redução de preço de pelo menos 20%."
+  },
+  {
+    id: 78,
+    title: "O Redator Literário de Longo Formato",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Atue como um redator profissional de alta performance. Desenvolva um artigo aprofundado sobre [TEMA]. Evite estruturas repetitivas, termos clichês de IA (como 'no cenário atual', 'divisor de águas') e adote um ritmo dinâmico, alternando frases curtas de impacto com explicações densas. O texto deve soar natural, humano e prender a atenção do início ao fim."
+  },
+  {
+    id: 79,
+    title: "O Revisor Ortográfico & Estilístico Humano",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Analise o texto a seguir: [COLE SEU TEXTO]. Atue como um editor-chefe implacável. Corrija erros gramaticais e ajuste a concordância, mas foque principalmente no estilo: remova redundâncias, substitua palavras vagas por termos precisos e melhore a fluidez da leitura sem alterar a mensagem original do autor."
+  },
+  {
+    id: 80,
+    title: "O Refatorador de Código Limpo (Clean Code)",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Atue como um Engenheiro de Software Sênior especialista em refatoração. Analise este código funcional: [COLE O CÓDIGO]. Reescreva-o aplicando padrões de Clean Code, melhorando a legibilidade, eliminando redundâncias e otimizando a performance, sem alterar a sua lógica de funcionamento. Justifique brevemente as principais mudanças feitas."
+  },
+  {
+    id: 81,
+    title: "O Engenheiro de Prompt Reverso",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Analise o seguinte resultado/texto gerado por uma IA: [COLE O RESULTADO]. Sua tarefa é desconstruir esse material e criar o prompt exato, detalhado e estruturado que eu deveria usar para que qualquer modelo de linguagem consiga replicar um resultado com a mesma qualidade, tom e profundidade."
+  },
+  {
+    id: 82,
+    title: "O Simulador de Entrevistas Técnicas",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Quero que você atue como um recrutador técnico experiente para a vaga de [NOME DA VAGA/PROFISSÃO]. Faça uma pergunta técnica por vez, aguarde minha resposta e, após eu responder, avalie brevemente meus pontos fortes e fracos antes de passar para a próxima pergunta. Seja realista e desafiador."
+  },
+  {
+    id: 83,
+    title: "O Arquitetador de Planilhas Complexas",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Preciso resolver o seguinte problema no Excel/Google Sheets: [DESCREVA O QUE PRECISA CALCULAR OU ORGANIZAR]. Monte a estrutura lógica e crie as fórmulas avançadas (como PROCV/X, SE aninhados, ÍNDICE/CORRESP) necessárias para automatizar esse processo. Explique o passo a passo de onde colar cada elemento."
+  },
+  {
+    id: 84,
+    title: "O Analista de Contratos e Riscos Legais",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Atue como um analista de risco corporativo. Analise as cláusulas deste contrato/termo: [COLE O TEXTO]. Identifique pegadinhas ocultas, obrigações desproporcionais, multas abusivas ou prazos perigosos. Traduza os termos jurídicos complexos para uma linguagem simples e aponte o que deve ser renegociado."
+  },
+  {
+    id: 85,
+    title: "O Ghostwriter de Posts de Autoridade",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Transforme o seguinte insight/ideia solta em um post magnético para o LinkedIn: [COLE SUA IDEIA]. O texto deve adotar o tom de um executivo sênior, focar em gerar valor prático para a rede, usar quebras de linha estratégicas para facilitar a leitura e terminar com uma pergunta forte que estimule o debate nos comentários."
+  },
+  {
+    id: 86,
+    title: "O Tradutor Cultural e de Nuances",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Traduza o seguinte texto técnico/comercial para o [IDIOMA DE DESTINO]: [COLE O TEXTO]. Não faça uma tradução literal. Adapte as gírias corporativas, metáforas e expressões idiomáticas para que o texto faça total sentido cultural e mantenha exatamente o mesmo impacto profissional no país de destino."
+  },
+  {
+    id: 87,
+    title: "O Desmanchador de Objeções de Vendas",
+    category: "Claude: Produtividade Avançada",
+    prompt: "Estou tentando vender um produto/serviço e o cliente em potencial apresentou a seguinte barreira: [COLE A OBJEÇÃO DO CLIENTE, EX: TA CARO]. Atue como um especialista em fechar negócios e crie 3 respostas estratégicas diferentes para contornar essa objeção, focando em gerar valor e desarmar o argumento do cliente sem soar agressivo."
   }
 ];
 
