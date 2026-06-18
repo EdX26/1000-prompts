@@ -431,6 +431,66 @@ export const prompts: Prompt[] = [
     title: "O Desmanchador de Objeções de Vendas",
     category: "Claude: Produtividade Avançada",
     prompt: "Estou tentando vender um produto/serviço e o cliente em potencial apresentou a seguinte barreira: [COLE A OBJEÇÃO DO CLIENTE, EX: TA CARO]. Atue como um especialista em fechar negócios e crie 3 respostas estratégicas diferentes para contornar essa objeção, focando em gerar valor e desarmar o argumento do cliente sem soar agressivo."
+  },
+  {
+    id: 88,
+    title: "O Explicador de Aulas e Palestras",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Tenho uma aula ou palestra longa para assistir, mas estou com pouco tempo: [COLE A TRANSCRIÇÃO OU O TEXTO DO VÍDEO]. Atue como um professor paciente e faça um resumão bem simples in tópicos. Explique os pontos principais de um jeito que qualquer pessoa consiga entender, sem usar palavras difíceis."
+  },
+  {
+    id: 89,
+    title: "O Passo a Passo de Tutoriais e Receitas",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Estou assistindo a um vídeo de tutorial/receita longo onde a pessoa fala muito: [COLE A TRANSCRIÇÃO OU DETALHES DO VÍDEO]. Vá direto ao ponto e extraia para mim apenas duas coisas: primeiro, a lista limpa de tudo o que vou precisar (ingredientes ou ferramentas) e, segundo, o passo a passo resumido em ordem para eu executar."
+  },
+  {
+    id: 90,
+    title: "O Tradutor e Explicador de Vídeo Gringo",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Achei um vídeo muito interessante em outro idioma, mas não entendo a língua perfeitamente: [COLE A TRANSCRIÇÃO DO VÍDEO INTERNACIONAL]. Assista/leia o conteúdo e me explique, em português bem claro e simples, sobre o que eles estão falando e quais são as principais conclusões do vídeo."
+  },
+  {
+    id: 91,
+    title: "O Localizador de Momentos Importantes",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Estou assistindo a este vídeo longo e preciso achar uma informação específica sem ter que ver tudo: [COLE A TRANSCRIÇÃO COM CARIMBOS DE TEMPO/TIMESTAMPS]. Procure no texto e me diga em qual minuto exato eles começam a falar sobre: [DIGITE O QUE VOCÊ QUER ENCONTRAR, EX: O PREÇO DO PRODUTO]."
+  },
+  {
+    id: 92,
+    title: "Ideias de Vídeos Curtos para Minhas Redes",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Gostei muito deste texto/notícia e queria gravar um vídeo curto (Reels ou TikTok) falando sobre isso: [COLE O TEXTO OU NOTÍCIA]. Crie um roteiro super simples de 30 segundos para eu ler olhando para a câmera. Escreva exatamente as palavras que eu devo falar, divididas em: um começo que chama a atenção, a explicação rápida e um final pedindo pras pessoas comentarem."
+  },
+  {
+    id: 93,
+    title: "O Resumidor de Notícias e Polêmicas",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Estou compartilhando este vídeo sobre uma notícia ou assunto do momento: [COLE A TRANSCRIÇÃO DO VÍDEO]. Para eu não ficar por fora, me dê um resumo rápido em um único parágrafo respondendo: Quem está envolvido? O que aconteceu de fato? Por que isso virou assunto?"
+  },
+  {
+    id: 94,
+    title: "O Gerador de Legendas Prontas",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Gravei um vídeo falando o seguinte conteúdo: [COLE O QUE VOCÊ FALOU NO VÍDEO]. Crie uma legenda bem bonita e chamativa para eu colar na postagem do meu Instagram/TikTok. Use quebras de linha para não ficar um texto cansativo, adicione alguns emojis que combinem com o assunto e coloque 5 hashtags relevantes no final."
+  },
+  {
+    id: 95,
+    title: "Criador de Perguntas para Estudar",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Quero ter certeza de que aprendi o conteúdo desta videoaula: [COLE A TRANSCRIÇÃO DA AULA]. Crie um jogo rápido com 5 perguntas de múltipla escolha sobre o que foi falado no vídeo. Coloque as respostas corretas escondidas bem lá no final para eu tentar responder sozinho primeiro."
+  },
+  {
+    id: 96,
+    title: "O Filtro Sincero de Opiniões (Vale a compra?)",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Estou querendo comprar um produto e achei este vídeo de avaliação/review: [COLE A TRANSCRIÇÃO DO VÍDEO]. Seja direto e me diga: o influenciador realmente gostou do produto ou falou mal? Quais foram as 3 principais vantagens e as 3 principais desvantagens que ele mencionou?"
+  },
+  {
+    id: 97,
+    title: "O Transformador de Áudio ou Vídeo em Texto Limpo",
+    category: "Gemini: Resumos Rápidos & Dicas",
+    prompt: "Recebi este vídeo/áudio longo e não posso assistir agora: [COLE A TRANSCRIÇÃO]. Por favor, leia tudo o que foi falado e transforme em um texto curto, limpo e organizado em tópicos simples. Remova as repetições de palavras, gírias excessivas e vá direto ao ponto, para que eu consiga entender toda a história ou explicação lendo em menos de 1 minuto."
   }
 ];
 
