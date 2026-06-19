@@ -23,21 +23,27 @@ export function PromptCard({ title, prompt, category }: PromptCardProps) {
 
   return (
     <Card className="flex flex-col h-full bg-card border-border hover:border-muted-foreground/30 transition-colors">
-      <CardHeader className="pb-3">
-        <div className="flex items-start justify-between gap-2">
+      <CardHeader className="pb-3 space-y-2">
+        <div className="flex flex-col gap-2">
+          {/* Badge posicionada acima para não esmagar o título horizontalmente */}
+          <div className="flex flex-wrap">
+            <Badge variant="secondary" className="text-[10px] md:text-xs whitespace-normal break-words max-w-full text-left font-normal">
+              {category}
+            </Badge>
+          </div>
+          
           <CardTitle className="text-base font-medium leading-snug text-card-foreground">
             {title}
           </CardTitle>
-          <Badge variant="secondary" className="shrink-0 text-xs">
-            {category}
-          </Badge>
         </div>
       </CardHeader>
+      
       <CardContent className="flex-1 pb-4">
         <p className="text-sm text-muted-foreground line-clamp-4 leading-relaxed">
           {prompt}
         </p>
       </CardContent>
+      
       <CardFooter className="pt-0">
         <Button
           variant="secondary"
