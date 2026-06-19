@@ -1,4 +1,3 @@
-
 export interface Prompt {
   readonly id: number;
   readonly title: string;
@@ -327,10 +326,7 @@ export const prompts: Prompt[] = [
     "title": "PROCX com curingas avançados para e-mails",
     "category": "EXCEL-FÓRMULAS-PROCV & PROCX",
     "prompt": "Preciso encontrar todos os dados cadastrais mapeados de usuários que utilizam o domínio corporativo '@empresa.com'. Mostre como setar o modo de caracteres curinga no PROCX para varrer colunas de contatos textuais parciais."
-  }
-,
-
-  // --- CATEGORIA: TREND PROMPTS DA SEMANA ---
+  },
   {
     "id": 71,
     "title": "Ideias e Lista para Churrasco pós-Jogo da Seleção",
@@ -350,306 +346,301 @@ export const prompts: Prompt[] = [
     "prompt": "Escreva um roteiro de vídeo curto (Reels/TikTok) de 15 segundos usando o humor sobre a Copa. O tema é a sensação de comemorar a vitória do Brasil, mas perceber que o gol no final destruiu o seu palpite no bolão."
   },
   {
-    id: 74,
-    title: "Estrategista de Economia e Preço Mais Baixo",
-    category: "Compras e Consumo Inteligente",
-    prompt: "Atue como um assistente de compras experiente. Quero adquirir o produto [NOME DO PRODUTO]. Varra as principais plataformas de e-commerce brasileiras confiáveis e me apresente uma tabela comparativa com o menor preço encontrado, estimativa de frete para a minha região e alertas caso o vendedor ou a loja escolhida possuam muitas avaliações negativas ou atrasos crônicos nas entregas."
+    "id": 74,
+    "title": "Estrategista de Economia e Preço Mais Baixo",
+    "category": "Compras e Consumo Inteligente",
+    "prompt": "Atue como um assistente de compras experiente. Quero adquirir o produto [NOME DO PRODUTO]. Varra as principais plataformas de e-commerce brasileiras confiáveis e me apresente uma tabela comparativa com o menor preço encontrado, estimativa de frete para a minha região e alertas caso o vendedor ou a loja escolhida possuam muitas avaliações negativas ou atrasos crônicos nas entregas."
   },
   {
-    id: 75,
-    title: "Rastreador de Ofertas Ocultas e Cashback",
-    category: "Achados e Cupons de IA",
-    prompt: "Estou finalizando a compra de [NOME DO PRODUTO] e quero garantir o máximo de desconto possível. Procure ativamente por cupons promocionais válidos, campanhas de cashback acumulativo ou ofertas de combos (leve mais por menos) que estejam ativos neste momento para este produto específico nas principais lojas da internet. Indique a estratégia ideal para fechar o carrinho com a maior economia."
+    "id": 75,
+    "title": "Rastreador de Ofertas Ocultas e Cashback",
+    "category": "Achados e Cupons de IA",
+    "prompt": "Estou finalizando a compra de [NOME DO PRODUTO] e quero garantir o máximo de desconto possível. Procure ativamente por cupons promocionais válidos, campanhas de cashback acumulativo ou ofertas de combos (leve mais por menos) que estejam ativos neste momento para este produto específico nas principais lojas da internet. Indique a estratégia ideal para fechar o carrinho com a maior economia."
   },
   {
-    id: 76,
-    title: "Analista de Histórico e Tendência de Preço",
-    category: "Compras e Consumo Inteligente",
-    prompt: "Analise o comportamento de mercado do produto [NOME DO PRODUTO]. Com base nas informações e dados públicos disponíveis na web, determine se o valor cobrado por ele hoje está acima da média, na média ou se representa uma queda real em relação aos últimos meses. Me dê um direcionamento claro se a recomendação técnica é comprar imediatamente ou aguardar uma janela melhor de descontos."
+    "id": 76,
+    "title": "Analista de Histórico e Tendência de Preço",
+    "category": "Compras e Consumo Inteligente",
+    "prompt": "Analise o comportamento de mercado do produto [NOME DO PRODUTO]. Com base nas informações e dados públicos disponíveis na web, determine se o valor cobrado por ele hoje está acima da média, na média ou se representa uma queda real em relação aos últimos meses. Me dê um direcionamento claro se a recomendação técnica é comprar imediatamente ou aguardar uma janela melhor de descontos."
   },
   {
-    id: 77,
-    title: "Mapeador de Concorrentes e Custo-Benefício",
-    category: "Compras e Consumo Inteligente",
-    prompt: "Desejo comprar o produto [NOME DO PRODUTO], porém gostaria de avaliar opções mais econômicas antes de fechar o pedido. Analise as características técnicas, especificações de hardware e funções principais desse modelo e me sugira até 3 produtos alternativos de marcas concorrentes ou versões anteriores que entreguem o mesmo benefício central com uma redução de preço de pelo menos 20%."
+    "id": 77,
+    "title": "Mapeador de Concorrentes e Custo-Benefício",
+    "category": "Compras e Consumo Inteligente",
+    "prompt": "Desejo comprar o produto [NOME DO PRODUTO], porém gostaria de avaliar opções mais econômicas antes de fechar o pedido. Analise as características técnicas, especificações de hardware e funções principais desse modelo e me sugira até 3 produtos alternativos de marcas concorrentes ou versões anteriores que entreguem o mesmo benefício central com uma redução de preço de pelo menos 20%."
   },
   {
-    id: 78,
-    title: "O Redator Literário de Longo Formato",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Atue como um redator profissional de alta performance. Desenvolva um artigo aprofundado sobre [TEMA]. Evite estruturas repetitivas, termos clichês de IA (como 'no cenário atual', 'divisor de águas') e adote um ritmo dinâmico, alternando frases curtas de impacto com explicações densas. O texto deve soar natural, humano e prender a atenção do início ao fim."
+    "id": 78,
+    "title": "O Redator Literário de Longo Formato",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Atue como um redator profissional de alta performance. Desenvolva um artigo aprofundado sobre [TEMA]. Evite estruturas repetitivas, termos clichês de IA (como 'no cenário atual', 'divisor de águas') e adote um ritmo dinâmico, alternando frases curtas de impacto com explicações densas. O texto deve soar natural, humano e prender a atenção do início ao fim."
   },
   {
-    id: 79,
-    title: "O Revisor Ortográfico & Estilístico Humano",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Analise o texto a seguir: [COLE SEU TEXTO]. Atue como um editor-chefe implacável. Corrija erros gramaticais e ajuste a concordância, mas foque principalmente no estilo: remova redundâncias, substitua palavras vagas por termos precisos e melhore a fluidez da leitura sem alterar a mensagem original do autor."
+    "id": 79,
+    "title": "O Revisor Ortográfico & Estilístico Humano",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Analise o texto a seguir: [COLE SEU TEXTO]. Atue como um editor-chefe implacável. Corrija erros gramaticais e ajuste a concordância, mas foque principalmente no estilo: remova redundâncias, substitua palavras vagas por termos precisos e melhore a fluidez da leitura sem alterar a mensagem original do autor."
   },
   {
-    id: 80,
-    title: "O Refatorador de Código Limpo (Clean Code)",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Atue como um Engenheiro de Software Sênior especialista em refatoração. Analise este código funcional: [COLE O CÓDIGO]. Reescreva-o aplicando padrões de Clean Code, melhorando a legibilidade, eliminando redundâncias e otimizando a performance, sem alterar a sua lógica de funcionamento. Justifique brevemente as principais mudanças feitas."
+    "id": 80,
+    "title": "O Refatorador de Código Limpo (Clean Code)",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Atue como um Engenheiro de Software Sênior especialista em refatoração. Analise este código funcional: [COLE O CÓDIGO]. Reescreva-o aplicando padrões de Clean Code, melhorando a legibilidade, eliminando redundâncias e otimizando a performance, sem alterar a sua lógica de funcionamento. Justifique brevemente as principais mudanças feitas."
   },
   {
-    id: 81,
-    title: "O Engenheiro de Prompt Reverso",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Analise o seguinte resultado/texto gerado por uma IA: [COLE O RESULTADO]. Sua tarefa é desconstruir esse material e criar o prompt exato, detalhado e estruturado que eu deveria usar para que qualquer modelo de linguagem consiga replicar um resultado com a mesma qualidade, tom e profundidade."
+    "id": 81,
+    "title": "O Engenheiro de Prompt Reverso",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Analise o seguinte resultado/texto gerado por uma IA: [COLE O RESULTADO]. Sua tarefa é desconstruir esse material e criar o prompt exato, detalhado e estruturado que eu deveria usar para que qualquer modelo de linguagem consiga replicar um resultado com a mesma qualidade, tom e profundidade."
   },
   {
-    id: 82,
-    title: "O Simulador de Entrevistas Técnicas",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Quero que você atue como um recrutador técnico experiente para a vaga de [NOME DA VAGA/PROFISSÃO]. Faça uma pergunta técnica por vez, aguarde minha resposta e, após eu responder, avalie brevemente meus pontos fortes e fracos antes de passar para a próxima pergunta. Seja realista e desafiador."
+    "id": 82,
+    "title": "O Simulador de Entrevistas Técnicas",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Quero que você atue como um recrutador técnico experiente para a vaga de [NOME DA VAGA/PROFISSÃO]. Faça uma pergunta técnica por vez, aguarde minha resposta e, após eu responder, avalie brevemente meus pontos fortes e fracos antes de passar para a próxima pergunta. Seja realista e desafiador."
   },
   {
-    id: 83,
-    title: "O Arquitetador de Planilhas Complexas",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Preciso resolver o seguinte problema no Excel/Google Sheets: [DESCREVA O QUE PRECISA CALCULAR OU ORGANIZAR]. Monte a estrutura lógica e crie as fórmulas avançadas (como PROCV/X, SE aninhados, ÍNDICE/CORRESP) necessárias para automatizar esse processo. Explique o passo a passo de onde colar cada elemento."
+    "id": 83,
+    "title": "O Arquitetador de Planilhas Complexas",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Preciso resolver o seguinte problema no Excel/Google Sheets: [DESCREVA O QUE PRECISA CALCULAR OU ORGANIZAR]. Monte a estrutura lógica e crie as fórmulas avançadas (como PROCV/X, SE aninhados, ÍNDICE/CORRESP) necessárias para automatizar esse processo. Explique o passo a passo de onde colar cada elemento."
   },
   {
-    id: 84,
-    title: "O Analista de Contratos e Riscos Legais",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Atue como um analista de risco corporativo. Analise as cláusulas deste contrato/termo: [COLE O TEXTO]. Identifique pegadinhas ocultas, obrigações desproporcionais, multas abusivas ou prazos perigosos. Traduza os termos jurídicos complexos para uma linguagem simples e aponte o que deve ser renegociado."
+    "id": 84,
+    "title": "O Analista de Contratos e Riscos Legais",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Atue como um analista de risco corporativo. Analise as cláusulas deste contrato/termo: [COLE O TEXTO]. Identifique pegadinhas ocultas, obrigações desproporcionais, multas abusivas ou prazos perigosos. Traduza os termos jurídicos complexos para uma linguagem simples e aponte o que deve ser renegociado."
   },
   {
-    id: 85,
-    title: "O Ghostwriter de Posts de Autoridade",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Transforme o seguinte insight/ideia solta em um post magnético para o LinkedIn: [COLE SUA IDEIA]. O texto deve adotar o tom de um executivo sênior, focar em gerar valor prático para a rede, usar quebras de linha estratégicas para facilitar a leitura e terminar com uma pergunta forte que estimule o debate nos comentários."
+    "id": 85,
+    "title": "O Ghostwriter de Posts de Autoridade",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Transforme o seguinte insight/ideia solta em um post magnético para o LinkedIn: [COLE SUA IDEIA]. O texto deve adotar o tom de um executivo sênior, focar em gerar valor prático para a rede, usar quebras de linha estratégicas para facilitar a leitura e terminar com uma pergunta forte que estimule o debate nos comentários."
   },
   {
-    id: 86,
-    title: "O Tradutor Cultural e de Nuances",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Traduza o seguinte texto técnico/comercial para o [IDIOMA DE DESTINO]: [COLE O TEXTO]. Não faça uma tradução literal. Adapte as gírias corporativas, metáforas e expressões idiomáticas para que o texto faça total sentido cultural e mantenha exatamente o mesmo impacto profissional no país de destino."
+    "id": 86,
+    "title": "O Tradutor Cultural e de Nuances",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Traduza o seguinte texto técnico/comercial para o [IDIOMA DE DESTINO]: [COLE O TEXTO]. Não faça uma tradução literal. Adapte as gírias corporativas, metáforas e expressões idiomáticas para que o texto faça total sentido cultural e mantenha exatamente o mesmo impacto profissional no país de destino."
   },
   {
-    id: 87,
-    title: "O Desmanchador de Objeções de Vendas",
-    category: "Claude: Produtividade Avançada",
-    prompt: "Estou tentando vender um produto/serviço e o cliente em potencial apresentou a seguinte barreira: [COLE A OBJEÇÃO DO CLIENTE, EX: TA CARO]. Atue como um especialista em fechar negócios e crie 3 respostas estratégicas diferentes para contornar essa objeção, focando em gerar valor e desarmar o argumento do cliente sem soar agressivo."
+    "id": 87,
+    "title": "O Desmanchador de Objeções de Vendas",
+    "category": "Claude: Produtividade Avançada",
+    "prompt": "Estou tentando vender um produto/serviço e o cliente em potencial apresentou a seguinte barreira: [COLE A OBJEÇÃO DO CLIENTE, EX: TA CARO]. Atue como um especialista em fechar negócios e crie 3 respostas estratégicas diferentes para contornar essa objeção, focando em gerar valor e desarmar o argumento do cliente sem soar agressivo."
   },
   {
-    id: 88,
-    title: "O Explicador de Aulas e Palestras",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Tenho uma aula ou palestra longa para assistir, mas estou com pouco tempo: [COLE A TRANSCRIÇÃO OU O TEXTO DO VÍDEO]. Atue como um professor paciente e faça um resumão bem simples in tópicos. Explique os pontos principais de um jeito que qualquer pessoa consiga entender, sem usar palavras difíceis."
+    "id": 88,
+    "title": "O Explicador de Aulas e Palestras",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Tenho uma aula ou palestra longa para assistir, mas estou com pouco tempo: [COLE A TRANSCRIÇÃO OU O TEXTO DO VÍDEO]. Atue como um professor paciente e faça um resumão bem simples em tópicos. Explique os pontos principais de um jeito que qualquer pessoa consiga entender, sem usar palavras difíceis."
   },
   {
-    id: 89,
-    title: "O Passo a Passo de Tutoriais e Receitas",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Estou assistindo a um vídeo de tutorial/receita longo onde a pessoa fala muito: [COLE A TRANSCRIÇÃO OU DETALHES DO VÍDEO]. Vá direto ao ponto e extraia para mim apenas duas coisas: primeiro, a lista limpa de tudo o que vou precisar (ingredientes ou ferramentas) e, segundo, o passo a passo resumido em ordem para eu executar."
+    "id": 89,
+    "title": "O Passo a Passo de Tutoriais e Receitas",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Estou assistindo a um vídeo de tutorial/receita longo onde a pessoa fala muito: [COLE A TRANSCRIÇÃO OU DETALHES DO VÍDEO]. Vá direto ao ponto e extraia para mim apenas duas coisas: primeiro, a lista limpa de tudo o que vou precisar (ingredientes ou ferramentas) e, segundo, o passo a passo resumido em ordem para eu executar."
   },
   {
-    id: 90,
-    title: "O Tradutor e Explicador de Vídeo Gringo",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Achei um vídeo muito interessante em outro idioma, mas não entendo a língua perfeitamente: [COLE A TRANSCRIÇÃO DO VÍDEO INTERNACIONAL]. Assista/leia o conteúdo e me explique, em português bem claro e simples, sobre o que eles estão falando e quais são as principais conclusões do vídeo."
+    "id": 90,
+    "title": "O Tradutor e Explicador de Vídeo Gringo",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Achei um vídeo muito interessante em outro idioma, mas não entendo a língua perfeitamente: [COLE A TRANSCRIÇÃO DO VÍDEO INTERNACIONAL]. Assista/leia o conteúdo e me explique, em português bem claro e simples, sobre o que eles estão falando e quais são as principais conclusões do vídeo."
   },
   {
-    id: 91,
-    title: "O Localizador de Momentos Importantes",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Estou assistindo a este vídeo longo e preciso achar uma informação específica sem ter que ver tudo: [COLE A TRANSCRIÇÃO COM CARIMBOS DE TEMPO/TIMESTAMPS]. Procure no texto e me diga em qual minuto exato eles começam a falar sobre: [DIGITE O QUE VOCÊ QUER ENCONTRAR, EX: O PREÇO DO PRODUTO]."
+    "id": 91,
+    "title": "O Localizador de Momentos Importantes",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Estou assistindo a este vídeo longo e preciso achar uma informação específica sem ter que ver tudo: [COLE A TRANSCRIÇÃO COM CARIMBOS DE TEMPO/TIMESTAMPS]. Procure no texto e me diga em qual minuto exato eles começam a falar sobre: [DIGITE O QUE VOCÊ QUER ENCONTRAR, EX: O PREÇO DO PRODUTO]."
   },
   {
-    id: 92,
-    title: "Ideias de Vídeos Curtos para Minhas Redes",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Gostei muito deste texto/notícia e queria gravar um vídeo curto (Reels ou TikTok) falando sobre isso: [COLE O TEXTO OU NOTÍCIA]. Crie um roteiro super simples de 30 segundos para eu ler olhando para a câmera. Escreva exatamente as palavras que eu devo falar, divididas em: um começo que chama a atenção, a explicação rápida e um final pedindo pras pessoas comentarem."
+    "id": 92,
+    "title": "Ideias de Vídeos Curtos para Minhas Redes",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Gostei muito deste texto/notícia e queria gravar um vídeo curto (Reels ou TikTok) falando sobre isso: [COLE O TEXTO OU NOTÍCIA]. Crie um roteiro super simples de 30 segundos para eu ler olhando para a câmera. Escreva exatamente as palavras que eu devo falar, divididas em: um começo que chama a atenção, a explicação rápida e um final pedindo pras pessoas comentarem."
   },
   {
-    id: 93,
-    title: "O Resumidor de Notícias e Polêmicas",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Estou compartilhando este vídeo sobre uma notícia ou assunto do momento: [COLE A TRANSCRIÇÃO DO VÍDEO]. Para eu não ficar por fora, me dê um resumo rápido em um único parágrafo respondendo: Quem está envolvido? O que aconteceu de fato? Por que isso virou assunto?"
+    "id": 93,
+    "title": "O Resumidor de Notícias e Polêmicas",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Estou compartilhando este vídeo sobre uma notícia ou assunto do momento: [COLE A TRANSCRIÇÃO DO VÍDEO]. Para eu não ficar por fora, me dê um resumo rápido em um único parágrafo respondendo: Quem está envolvido? O que aconteceu de fato? Por que isso virou assunto?"
   },
   {
-    id: 94,
-    title: "O Gerador de Legendas Prontas",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Gravei um vídeo falando o seguinte conteúdo: [COLE O QUE VOCÊ FALOU NO VÍDEO]. Crie uma legenda bem bonita e chamativa para eu colar na postagem do meu Instagram/TikTok. Use quebras de linha para não ficar um texto cansativo, adicione alguns emojis que combinem com o assunto e coloque 5 hashtags relevantes no final."
+    "id": 94,
+    "title": "O Gerador de Legendas Prontas",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Gravei um vídeo falando o seguinte conteúdo: [COLE O QUE VOCÊ FALOU NO VÍDEO]. Crie uma legenda bem bonita e chamativa para eu colar na postagem do meu Instagram/TikTok. Use quebras de linha para não ficar um texto cansativo, adicione alguns emojis que combinem com o assunto e coloque 5 hashtags relevantes no final."
   },
   {
-    id: 95,
-    title: "Criador de Perguntas para Estudar",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Quero ter certeza de que aprendi o conteúdo desta videoaula: [COLE A TRANSCRIÇÃO DA AULA]. Crie um jogo rápido com 5 perguntas de múltipla escolha sobre o que foi falado no vídeo. Coloque as respostas corretas escondidas bem lá no final para eu tentar responder sozinho primeiro."
+    "id": 95,
+    "title": "Criador de Perguntas para Estudar",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Quero ter certeza de que aprendi o conteúdo desta videoaula: [COLE A TRANSCRIÇÃO DA AULA]. Crie um jogo rápido com 5 perguntas de múltipla escolha sobre o que foi falado no vídeo. Coloque as respostas corretas escondidas bem lá no final para eu tentar responder sozinho primeiro."
   },
   {
-    id: 96,
-    title: "O Filtro Sincero de Opiniões (Vale a compra?)",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Estou querendo comprar um produto e achei este vídeo de avaliação/review: [COLE A TRANSCRIÇÃO DO VÍDEO]. Seja direto e me diga: o influenciador realmente gostou do produto ou falou mal? Quais foram as 3 principais vantagens e as 3 principais desvantagens que ele mencionou?"
+    "id": 96,
+    "title": "O Filtro Sincero de Opiniões (Vale a compra?)",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Estou querendo comprar um produto e achei este vídeo de avaliação/review: [COLE A TRANSCRIÇÃO DO VÍDEO]. Seja direto e me diga: o influenciador realmente gostou do produto ou falou mal? Quais foram as 3 principais vantagens e as 3 principais desvantagens que ele mencionou?"
   },
   {
-    id: 97,
-    title: "O Transformador de Áudio ou Vídeo em Texto Limpo",
-    category: "Gemini: Resumos Rápidos & Dicas",
-    prompt: "Recebi este vídeo/áudio longo e não posso assistir agora: [COLE A TRANSCRIÇÃO]. Por favor, leia tudo o que foi falado e transforme em um texto curto, limpo e organizado em tópicos simples. Remova as repetições de palavras, gírias excessivas e vá direto ao ponto, para que eu consiga entender toda a história ou explicação lendo em menos de 1 minuto."
+    "id": 97,
+    "title": "O Transformador de Áudio ou Vídeo em Texto Limpo",
+    "category": "Gemini: Resumos Rápidos & Dicas",
+    "prompt": "Recebi este vídeo/áudio longo e não posso assistir agora: [COLE A TRANSCRIÇÃO]. Por favor, leia tudo o que foi falado e transforme em um texto curto, limpo e organizado em tópicos simples. Remova as repetições de palavras, gírias excessivas e vá direto ao ponto, para que eu consiga entender toda a história ou explicação lendo em menos de 1 minuto."
   },
   {
-    id: 98,
-    title: "A Carta de Reclamação Procon (Produto com Defeito)",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Comprei um produto que veio com defeito, a empresa está enrolando para resolver e quero registrar uma reclamação formal no Procon: [COLE O NOME DO PRODUTO, DA LOJA E O PROBLEMA]. Atue como um specialist em direitos do consumidor e redija uma carta clara, firme e baseada no Código de Defesa do Consumidor, exigindo a troca, o conserto ou a devolução do meu dinheiro."
+    "id": 98,
+    "title": "A Carta de Reclamação Procon (Produto com Defeito)",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Comprei um produto que veio com defeito, a empresa está enrolando para resolver e quero registrar uma reclamação formal no Procon: [COLE O NOME DO PRODUTO, DA LOJA E O PROBLEMA]. Atue como um especialista em direitos do consumidor e redija uma carta clara, firme e baseada no Código de Defesa do Consumidor, exigindo a troca, o conserto ou a devolução do meu dinheiro."
   },
   {
-    id: 99,
-    title: "O Cancelamento de Serviço Sem Multa",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Quero cancelar um serviço (como internet, telefone ou academia), mas eles estão querendo me cobrar uma multa de fidelidade abusiva, mesmo o serviço tendo apresentado falhas constantes: [EXPLIQUE AS FALHAS DO SERVIÇO E O NOME DA EMPRESA]. Crie um texto de solicitação de cancelamento exigindo a isenção da multa contratual devido ao descumprimento do serviço por parte deles."
+    "id": 99,
+    "title": "O Cancelamento de Serviço Sem Multa",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Quero cancelar um serviço (como internet, telefone ou academia), mas eles estão querendo me cobrar uma multa de fidelidade abusiva, mesmo o serviço tendo apresentado falhas constantes: [EXPLIQUE AS FALHAS DO SERVIÇO E O NOME DA EMPRESA]. Crie um texto de solicitação de cancelamento exigindo a isenção da multa contratual devido ao descumprimento do serviço por parte deles."
   },
   {
-    id: 100,
-    title: "O Pedido de Reconsideração no Banco",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Apareceu uma cobrança de tarifa de manutenção de conta ou anuidade que eu não concordo no meu extrato bancário: [DADOS DA TARIFA E DO BANCO]. Escreva uma mensagem curta e educada para eu enviar ao meu gerente ou pelo chat do aplicativo, solicitando o estorno do valor e explicando que sou um cliente antigo e pretendo manter um bom relacionamento com a instituição."
+    "id": 100,
+    "title": "O Pedido de Reconsideração no Banco",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Apareceu uma cobrança de tarifa de manutenção de conta ou anuidade que eu não concordo no meu extrato bancário: [DADOS DA TARIFA E DO BANCO]. Escreva uma mensagem curta e educada para eu enviar ao meu gerente ou pelo chat do aplicativo, solicitando o estorno do valor e explicando que sou um cliente antigo e pretendo manter um bom relacionamento com a instituição."
   },
   {
-    id: 101,
-    title: "O Requerimento Simples para a Prefeitura",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Preciso pedir para a prefeitura resolver um problema estrutural na minha rua ou bairro: [DIGITE O PROBLEMA, EX: BURACO NA RUA, ILUMINAÇÃO QUEBRADA OU PODA DE ÁRVORE]. Monte um requerimento simples e formal contendo os fatos e a solicitação do serviço, pronto para eu protocolar no site da prefeitura ou na subprefeitura da minha região."
+    "id": 101,
+    "title": "O Requerimento Simples para a Prefeitura",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Preciso pedir para a prefeitura resolver um problema estrutural na minha rua ou bairro: [DIGITE O PROBLEMA, EX: BURACO NA RUA, ILUMINAÇÃO QUEBRADA OU PODA DE ÁRVORE]. Monte um requerimento simples e formal contendo os fatos e a solicitação do serviço, pronto para eu protocolar no site da prefeitura ou na subprefeitura da minha região."
   },
   {
-    id: 102,
-    title: "A Notificação de Cobrança Amigável",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Sou trabalhador autônomo/prestador de serviço e um cliente está atrasado com o meu pagamento há dias: [NOME DO CLIENTE E VALOR DEVIDO]. Escreva uma mensagem de cobrança que seja formal, profissional e amigável, lembrando do prazo vencido e fornecendo os dados para pagamento, mantendo o respeito para não fechar as portas com esse cliente."
+    "id": 102,
+    "title": "A Notificação de Cobrança Amigável",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Sou trabalhador autônomo/prestador de serviço e um cliente está atrasado com o meu pagamento há dias: [NOME DO CLIENTE E VALOR DEVIDO]. Escreva uma mensagem de cobrança que seja formal, profissional e amigável, lembrando do prazo vencido e fornecendo os dados para pagamento, mantendo o respeito para não fechar as portas com esse cliente."
   },
   {
-    id: 103,
-    title: "O Tradutor de Contrato de Aluguel",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Estou prestes a assinar um contrato de aluguel ou recebi um termo e achei as cláusulas muito difíceis de entender: [COLE O TEXTO DO CONTRATO OU A CLÁUSULA CONFUSA]. Traduza esse texto jurídico para o português do dia a dia, me explicando de forma bem simples quais são as minhas obrigações e se existe algum risco ou pegadinha oculta ali."
+    "id": 103,
+    "title": "O Tradutor de Contrato de Aluguel",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Estou prestes a assinar um contrato de aluguel ou recebi um termo e achei as cláusulas muito difíceis de entender: [COLE O TEXTO DO CONTRATO OU A CLÁUSULA CONFUSA]. Traduza esse texto jurídico para o português do dia a dia, me explicando de forma bem simples quais são as minhas obrigações e se existe algum risco ou pegadinha oculta ali."
   },
   {
-    id: 104,
-    title: "O Pedido de Reconformação de Viagem/Voo",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Tive um problema com uma viagem (como voo cancelado, atraso absurdo ou mala extraviada) e a empresa de transporte não quer me indenizar corretamente: [EXPLIQUE O QUE ACONTECEU E O NOME DA EMPRESA]. Crie uma carta de reclamação exigindo o reembolso das despesas ou a indenização devida, citando de forma firme que eles são responsáveis pelo transtorno causado."
+    "id": 104,
+    "title": "O Pedido de Reconformação de Viagem/Voo",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Tive um problema com uma viagem (como voo cancelado, atraso absurdo ou mala extraviada) e a empresa de transporte não quer me indenizar corretamente: [EXPLIQUE O QUE ACONTECEU E O NOME DA EMPRESA]. Crie uma carta de reclamação exigindo o reembolso das despesas ou a indenização devida, citando de forma firme que eles são responsáveis pelo transtorno causado."
   },
   {
-    id: 105,
-    title: "O Recurso de Multa de Trânsito Simples",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Recebi uma multa de trânsito injusta ou que possui um erro claro na notificação (como a cor do carro errada ou endereço incorreto): [DETALHES DA MULTA E SEU ARGUMENTO]. Monte uma defesa prévia simples e bem estruturada para eu enviar ao órgão de trânsito competente, explicando o motivo pelo qual a multa deve ser cancelada."
+    "id": 105,
+    "title": "O Recurso de Multa de Trânsito Simples",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Recebi uma multa de trânsito injusta ou que possui um erro claro na notificação (como a cor do carro errada ou endereço incorreto): [DETALHES DA MULTA E SEU ARGUMENTO]. Monte uma defesa prévia simples e bem estruturada para eu enviar ao órgão de trânsito competente, explicando o motivo pelo qual a multa deve ser cancelada."
   },
   {
-    id: 106,
-    title: "A Carta de Demissão Sem Climão",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Decidi pedir demissão do meu emprego atual para seguir novos caminhos e preciso entregar a carta formal de demissão: [NOME DA EMPRESA E SEU CARGO]. Escreva uma carta curta, elegante e profissional para o setor de Recursos Humanos, comunicando a minha saída, agradecendo pela oportunidade e informando se vou ou não cumprir o aviso prévio."
+    "id": 106,
+    "title": "A Carta de Demissão Sem Climão",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Decidi pedir demissão do meu emprego atual para seguir novos caminhos e preciso entregar a carta formal de demissão: [NOME DA EMPRESA E SEU CARGO]. Escreva uma carta curta, elegante e profissional para o setor de Recursos Humanos, comunicando a minha saída, agradecendo pela oportunidade e informando se vou ou não cumprir o aviso prévio."
   },
   {
-    id: 107,
-    title: "O Pedido de Isenção ou Desconto de Taxas",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Preciso pedir a isenção de uma taxa de inscrição ou desconto em juros de uma conta atrasada por motivos de força maior (como desemprego ou doença na família): [EXPLIQUE A SUA SITUACÃO E A TAXA]. Escreva uma justificativa formal e respeitável para eu enviar à instituição, explicando a minha real condição e solicitando a flexibilização do valor."
+    "id": 107,
+    "title": "O Pedido de Isenção ou Desconto de Taxas",
+    "category": "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    "prompt": "Preciso pedir a isenção de uma taxa de inscrição ou desconto em juros de uma conta atrasada por motivos de força maior (como desemprego ou doença na família): [EXPLIQUE A SUA SITUAÇÃO E O PEDIDO]."
   },
   {
-    id: 107,
-    title: "O Pedido de Isenção ou Desconto de Taxas",
-    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
-    prompt: "Preciso pedir a isenção de uma taxa de inscrição ou desconto em juros de uma conta atrasada por motivos de força maior (como desemprego ou doença na família): [EXPLIQUE A SUA SITUAÇÃO E O PEDIDO]."
+    "id": 201,
+    "title": "Resumo Prático",
+    "category": "Direto ao Ponto",
+    "prompt": "Faça um resumo bem curto e em tópicos dos pontos principais do texto a seguir.\nFoque apenas nas informações que são realmente importantes e práticas para o leitor.\n[COLE O TEXTO AQUI]"
   },
   {
-    id: 201,
-    title: "Resumo Prático",
-    prompt: "Faça um resumo bem curto e em tópicos dos pontos principais do texto a seguir.\nFoque apenas nas informações que são realmente importantes e práticas para o leitor.\n[COLE O TEXTO AQUI]",
-    category: "Direto ao Ponto"
+    "id": 202,
+    "title": "Ideias de Conteúdo",
+    "category": "Direto ao Ponto",
+    "prompt": "Crie 5 ideias de títulos chamativos e altamente clicáveis para um vídeo curto sobre [ASSUNTO].\nOs títulos devem focar em gerar curiosidade e prender a atenção do público nos primeiros segundos.\nEvite clichês e use uma linguagem direta, moderna e impactante."
   },
   {
-    id: 202,
-    title: "Ideias de Conteúdo",
-    prompt: "Crie 5 ideias de títulos chamativos e altamente clicáveis para um vídeo curto sobre [ASSUNTO].\nOs títulos devem focar em gerar curiosidade e prender a atenção do público nos primeiros segundos.\nEvite clichês e use uma linguagem direta, moderna e impactante.",
-    category: "Direto ao Ponto"
+    "id": 203,
+    "title": "Clareza de Texto",
+    "category": "Direto ao Ponto",
+    "prompt": "Reescreva o texto abaixo para deixá-lo muito mais claro, profissional e direto ao ponto.\nRemova todas as palavras repetitivas, enrolações e termos difíceis de entender.\n[COLE SEU TEXTO AQUI]"
   },
   {
-    id: 203,
-    title: "Clareza de Texto",
-    prompt: "Reescreva o texto abaixo para deixá-lo muito mais claro, profissional e direto ao ponto.\nRemova todas as palavras repetitivas, enrolações e termos difíceis de entender.\n[COLE SEU TEXTO AQUI]",
-    category: "Direto ao Ponto"
+    "id": 204,
+    "title": "E-mail Profissional",
+    "category": "Direto ao Ponto",
+    "prompt": "Escreva um e-mail curto e profissional agendando uma reunião com [NOME/CARGO] para tratar de [ASSUNTO].\nO tom deve ser direto, respeitoso e sugerir duas opções de horários na próxima semana.\nDeixe os campos em colchetes para eu preencher os dados finais."
   },
   {
-    id: 204,
-    title: "E-mail Profissional",
-    prompt: "Escreva um e-mail curto e profissional agendando uma reunião com [NOME/CARGO] para tratar de [ASSUNTO].\nO tom deve ser direto, respeitoso e sugerir duas opções de horários na próxima semana.\nDeixe os campos em colchetes para eu preencher os dados finais.",
-    category: "Direto ao Ponto"
+    "id": 205,
+    "title": "Resposta de Cliente",
+    "category": "Direto ao Ponto",
+    "prompt": "Redija uma resposta educada e firme para um cliente que está reclamando sobre [MOTIVO DA RECLAMAÇÃO].\nFoque em propor uma solução rápida para o problema e em manter o bom relacionamento.\nMantenha o texto com no máximo dois parágrafos curtos."
   },
   {
-    id: 205,
-    title: "Resposta de Cliente",
-    prompt: "Redija uma resposta educada e firme para um cliente que está reclamando sobre [MOTIVO DA RECLAMAÇÃO].\nFoque em propor uma solução rápida para o problema e em manter o bom relacionamento.\nMantenha o texto com no máximo dois parágrafos curtos.",
-    category: "Direto ao Ponto"
+    "id": 206,
+    "title": "Chuva de Ideias (Brainstorming)",
+    "category": "Direto ao Ponto",
+    "prompt": "Liste 10 ideias criativas e fora do comum para o seguinte projeto: [DESCREVA O PROJETO].\nFoque em soluções viáveis, mas que chamem a atenção do público-alvo de forma inovadora.\nEntregue apenas a lista direta, sem introduções ou explicações longas."
   },
   {
-    id: 206,
-    title: "Chuva de Ideias (Brainstorming)",
-    prompt: "Liste 10 ideias criativas e fora do comum para o seguinte projeto: [DESCREVA O PROJETO].\nFoque em soluções viáveis, mas que chamem a atenção do público-alvo de forma inovadora.\nEntregue apenas a lista direta, sem introduções ou explicações longas.",
-    category: "Direto ao Ponto"
+    "id": 207,
+    "title": "Correção de Código",
+    "category": "Direto ao Ponto",
+    "prompt": "Analise o código abaixo e identifique por que ele está apresentando erro ou travando.\nCorrija o problema mantendo a estrutura limpa e adicione um comentário curto explicando o erro.\n[COLE O CÓDIGO AQUI]"
   },
   {
-    id: 207,
-    title: "Correção de Código",
-    prompt: "Analise o código abaixo e identifique por que ele está apresentando erro ou travando.\nCorrija o problema mantendo a estrutura limpa e adicione um comentário curto explicando o erro.\n[COLE O CÓDIGO AQUI]",
-    category: "Direto ao Ponto"
+    "id": 208,
+    "title": "Tradução Natural",
+    "category": "Direto ao Ponto",
+    "prompt": "Traduza o texto a seguir para o [IDIOMA], adaptando gírias e expressões para soar totalmente natural.\nEvite traduções literais que deixem o texto truncado ou artificial para um nativo.\n[COLE O TEXTO AQUI]"
   },
   {
-    id: 208,
-    title: "Tradução Natural",
-    prompt: "Traduza o texto a seguir para o [IDIOMA], adaptando gírias e expressões para soar totalmente natural.\nEvite traduções literais que deixem o texto truncado ou artificial para um nativo.\n[COLE O TEXTO AQUI]",
-    category: "Direto ao Ponto"
+    "id": 209,
+    "title": "Explicação Simples",
+    "category": "Direto ao Ponto",
+    "prompt": "Explique o conceito de [CONCEITO DIFÍCIL] como se eu tivesse apenas 10 anos de idade.\nUse uma analogia simples do dia a dia para que a ideia fique fácil de fixar na mente.\nLimite a explicação a um parágrafo curto e direto."
   },
   {
-    id: 209,
-    title: "Explicação Simples",
-    prompt: "Explique o conceito de [CONCEITO DIFÍCIL] como se eu tivesse apenas 10 anos de idade.\nUse uma analogia simples do dia a dia para que a ideia fique fácil de fixar na mente.\nLimite a explicação a um parágrafo curto e direto.",
-    category: "Direto ao Ponto"
+    "id": 210,
+    "title": "Roteiro para Vídeo Curto",
+    "category": "Direto ao Ponto",
+    "prompt": "Crie um roteiro de 30 segundos para um vídeo dinâmico no Reels/TikTok sobre [ASSUNTO].\nDivida a estrutura em: Gancho Inicial (até 3s), Conteúdo Direto (22s) e Chamada para Ação (5s).\nIndique entre parênteses o que deve aparecer na tela em cada parte."
   },
   {
-    id: 210,
-    title: "Roteiro para Vídeo Curto",
-    prompt: "Crie um roteiro de 30 segundos para um vídeo dinâmico no Reels/TikTok sobre [ASSUNTO].\nDivida a estrutura em: Gancho Inicial (até 3s), Conteúdo Direto (22s) e Chamada para Ação (5s).\nIndique entre parênteses o que deve aparecer na tela em cada parte.",
-    category: "Direto ao Ponto"
+    "id": 211,
+    "title": "Descrição de Produto",
+    "category": "Direto ao Ponto",
+    "prompt": "Escreva uma descrição curta e persuasiva para vender o seguinte produto: [NOME E DETALHES].\nDestaque o maior benefício que ele traz para o cliente e crie um senso de oportunidade.\nO texto deve ser ideal para uma legenda de rede social ou página de vendas."
   },
   {
-    id: 211,
-    title: "Descrição de Produto",
-    prompt: "Escreva uma descrição curta e persuasiva para vender o seguinte produto: [NOME E DETALHES].\nDestaque o maior benefício que ele traz para o cliente e crie um senso de oportunidade.\nO texto deve ser ideal para uma legenda de rede social ou página de vendas.",
-    category: "Direto ao Ponto"
+    "id": 212,
+    "title": "Definição de Metas",
+    "category": "Direto ao Ponto",
+    "prompt": "Transforme o seguinte objetivo genérico em uma meta clara usando a metodologia SMART: [OBJETIVO].\nA meta final deve ser específica, mensurável, atingível, relevante e ter um prazo definido.\nEntregue o resultado formatado em uma única frase de impacto."
   },
   {
-    id: 212,
-    title: "Definição de Metas",
-    prompt: "Transforme o seguinte objetivo genérico em uma meta clara usando a metodologia SMART: [OBJETIVO].\nA meta final deve ser específica, mensurável, atingível, relevante e ter um prazo definido.\nEntregue o resultado formatado em uma única frase de impacto.",
-    category: "Direto ao Ponto"
+    "id": 213,
+    "title": "Extração de Dados",
+    "category": "Direto ao Ponto",
+    "prompt": "Extraia do texto abaixo apenas os nomes de empresas, valores financeiros e datas mencionadas.\nOrganize essas informações extraídas em uma tabela simples com três colunas bem definidas.\n[COLE O TEXTO AQUI]"
   },
   {
-    id: 213,
-    title: "Extração de Dados",
-    prompt: "Extraia do texto abaixo apenas os nomes de empresas, valores financeiros e datas mencionadas.\nOrganize essas informações extraídas em uma tabela simples com três colunas bem definidas.\n[COLE O TEXTO AQUI]",
-    category: "Direto ao Ponto"
+    "id": 214,
+    "title": "Criação de Hashtags e Tags",
+    "category": "Direto ao Ponto",
+    "prompt": "Gere as 15 melhores hashtags e palavras-chave para engajar um post focado em [ASSUNTO].\nMisture termos de grande volume com termos específicos do nicho para melhorar o alcance.\nEntregue os termos separados apenas por espaços, prontos para copiar e colar."
   },
   {
-    id: 214,
-    title: "Criação de Hashtags e Tags",
-    prompt: "Gere as 15 melhores hashtags e palavras-chave para engajar um post focado em [ASSUNTO].\nMisture termos de grande volume com termos específicos do nicho para melhorar o alcance.\nEntregue os termos separados apenas por espaços, prontos para copiar e colar.",
-    category: "Direto ao Ponto"
-  },
-  {
-    id: 215,
-    title: "Plano de Ação Rápido",
-    prompt: "Crie um plano de ação de 5 passos imediatos para começar a resolver o seguinte problema: [PROBLEMA].\nCada passo deve ser uma tarefa prática, direta e que dependa apenas de um esforço simples.\nOrdene a lista por ordem de prioridade, do mais urgente para o menos urgente.",
-    category: "Direto ao Ponto"
+    "id": 215,
+    "title": "Plano de Ação Rápido",
+    "category": "Direto ao Ponto",
+    "prompt": "Crie um plano de ação de 5 passos imediatos para começar a resolver o seguinte problema: [PROBLEMA].\nCada passo deve ser uma tarefa prática, direta e que dependa apenas de um esforço simples.\nOrdene a lista por ordem de prioridade, do mais urgente para o menos urgente."
   }
 ];
+
 const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =>
   a.localeCompare(b, 'pt-BR')
 );
