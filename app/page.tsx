@@ -27,11 +27,14 @@ export default function HomePage() {
     return new Set(matches.map(p => p.category));
   }, [searchQuery]);
 
-  // 2. Filtra os prompts para exibição e joga o card 108 para o topo
+  // 2. Filtra os prompts para exibição (Sem o card 108, pois ele agora é um aviso fixo no topo)
   const filteredPrompts = useMemo(() => {
     const queryNorm = normalize(searchQuery);
 
-    const result = prompts.filter((prompt) => {
+    return prompts.filter((prompt) => {
+      // Esconde o card 108 do grid comum para não ficar repetido
+      if (prompt.id === 108) return false;
+
       const matchesSearch =
         normalize(prompt.title).includes(queryNorm) ||
         normalize(prompt.prompt).includes(queryNorm) ||
@@ -41,19 +44,12 @@ export default function HomePage() {
 
       return matchesSearch && matchesCategory;
     });
-
-    // Ordenação cirúrgica: se o card 108 estiver na lista, ele ganha prioridade máxima no topo
-    return [...result].sort((a, b) => {
-      if (a.id === 108) return -1;
-      if (b.id === 108) return 1;
-      return 0;
-    });
   }, [searchQuery, selectedCategory])
 
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 px-4">
+      <section className="py-16 md:py-20 px-4 pb-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary mb-6">
             <Sparkles className="h-4 w-4 text-foreground" />
@@ -70,6 +66,34 @@ export default function HomePage() {
           </p>
 
           <SearchBar value={searchQuery} onChange={setSearchQuery} />
+        </div>
+      </section>
+
+      {/* CARD FIXO COR DE OURO (Abaixo da Busca, Acima das Abas) */}
+      <section className="px-4 pb-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-xl border border-amber-500 bg-amber-500/10 p-5 shadow-[0_0_20px_rgba(245,158,11,0.2)] text-left">
+            <div className="flex items-center gap-2 mb-3 text-amber-500 font-bold text-base md:text-lg">
+              <Sparkles className="h-5 w-5 fill-amber-500" />
+              <h2>💡 DICA IMPORTANTE: Como destravar o limite de vídeos do Gemini</h2>
+            </div>
+            <div className="text-sm md:text-base text-zinc-200 space-y-3 leading-relaxed">
+              <p>Sabe quando você está empolgado criando vídeos no Gemini e de repente aparece essa mensagem?</p>
+              <p className="italic bg-amber-500/5 border border-amber-500/20 px-3 py-2 rounded-md text-amber-400 font-medium">
+                ‘Desculpe, não posso gerar mais vídeos para você hoje. Volte amanhã para mais criações.’
+              </p>
+              <p>Se você já passou por isso, tenho uma dica que pode te ajudar.</p>
+              <p>
+                Clique nos <strong>três pontinhos</strong> do vídeo que você quer continuar ou refazer. Depois, selecione a opção <strong>‘Ramificar em uma nova conversa’</strong>.
+              </p>
+              <p>
+                O Gemini vai abrir uma nova conversa baseada naquele vídeo, permitindo que você continue criando, faça alterações ou adicione novas informações.
+              </p>
+              <p className="text-amber-400 font-medium text-xs md:text-sm pt-1">
+                ✨ Na maioria das vezes será possível gerar mais vídeos usando esse recurso.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -90,14 +114,12 @@ export default function HomePage() {
               const isMatch = categoriesWithMatches.has(category);
               const isTrend = category.toLowerCase().includes("trend") || category.toLowerCase().includes("tendencia");
               
-              // Estilização dinâmica forçada via Inline Style para evitar conflitos do Tailwind/Shadcn
               let badgeStyle = {};
               let variantType: "default" | "secondary" | "outline" = selectedCategory === category ? "default" : "secondary";
 
               if (isTrend) {
-                variantType = "outline"; // Libera o fundo para ser pintado manualmente
+                variantType = "outline";
                 if (selectedCategory === category) {
-                  // Estado Selecionado: Verde Seleção + Letras Amarelas Ouro
                   badgeStyle = { 
                     backgroundColor: "#009c3b", 
                     color: "#ffdf00", 
@@ -105,7 +127,6 @@ export default function HomePage() {
                     fontWeight: "bold"
                   };
                 } else {
-                  // Estado Inativo: Fundo Verde Escuro + Texto Verde Claro
                   badgeStyle = { 
                     backgroundColor: "#002f11", 
                     color: "#5cd684", 
@@ -144,23 +165,14 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           {filteredPrompts.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {filteredPrompts.map((prompt) => {
-                const isBonusCard = prompt.id === 108;
-
-                return (
-                  <PromptCard
-                    key={prompt.id}
-                    title={prompt.title}
-                    prompt={prompt.prompt}
-                    category={prompt.category}
-                    className={
-                      isBonusCard 
-                        ? "!bg-amber-500/10 !border-amber-500 shadow-[0_0_20px_rgba(245,158,11,0.3)] scale-[1.02]" 
-                        : ""
-                    }
-                  />
-                );
-              })}
+              {filteredPrompts.map((prompt) => (
+                <PromptCard
+                  key={prompt.id}
+                  title={prompt.title}
+                  prompt={prompt.prompt}
+                  category={prompt.category}
+                />
+              ))}
             </div>
           ) : (
             <div className="text-center py-16">
