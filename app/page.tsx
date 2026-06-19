@@ -32,7 +32,6 @@ export default function HomePage() {
     const queryNorm = normalize(searchQuery);
 
     return prompts.filter((prompt) => {
-      // Esconde o card 108 do grid comum para não ficar repetido
       if (prompt.id === 108) return false;
 
       const matchesSearch =
@@ -69,31 +68,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CARD FIXO COR DE OURO (Abaixo da Busca, Acima das Abas) */}
+      {/* CARDS FIXOS COR DE OURO (Abaixo da Busca, Acima das Abas) */}
       <section className="px-4 pb-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="rounded-xl border border-amber-500 bg-amber-500/10 p-5 shadow-[0_0_20px_rgba(245,158,11,0.2)] text-left">
-            <div className="flex items-center gap-2 mb-3 text-amber-500 font-bold text-base md:text-lg">
-              <Sparkles className="h-5 w-5 fill-amber-500" />
-              <h2>💡 DICA IMPORTANTE: Como destravar o limite de vídeos do Gemini</h2>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          {/* Card 1: Limite de Vídeos */}
+          <div className="rounded-xl border border-amber-500 bg-amber-500/10 p-5 shadow-[0_0_20px_rgba(245,158,11,0.2)] text-left flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-2 mb-3 text-amber-500 font-bold text-base md:text-lg">
+                <Sparkles className="h-5 w-5 fill-amber-500" />
+                <h2>💡 DICA IMPORTANTE: Como destravar o limite de vídeos do Gemini</h2>
+              </div>
+              <div className="text-sm md:text-base text-zinc-200 space-y-3 leading-relaxed">
+                <p>Sabe quando você está empolgado criando vídeos no Gemini e de repente aparece essa mensagem?</p>
+                <p className="italic bg-amber-500/5 border border-amber-500/20 px-3 py-2 rounded-md text-amber-400 font-medium text-sm">
+                  ‘Desculpe, não posso gerar mais vídeos para você hoje. Volte amanhã para mais criações.’
+                </p>
+                <p>Se você já passou por isso, clique nos <strong>três pontinhos</strong> do vídeo que você quer continuar ou refazer. Depois, selecione a opção <strong>‘Ramificar em uma nova conversa’</strong>.</p>
+                <p>O Gemini vai abrir uma nova conversa baseada naquele vídeo, permitindo que você continue criando, faça alterações ou adicione novas informações.</p>
+              </div>
             </div>
-            <div className="text-sm md:text-base text-zinc-200 space-y-3 leading-relaxed">
-              <p>Sabe quando você está empolgado criando vídeos no Gemini e de repente aparece essa mensagem?</p>
-              <p className="italic bg-amber-500/5 border border-amber-500/20 px-3 py-2 rounded-md text-amber-400 font-medium">
-                ‘Desculpe, não posso gerar mais vídeos para você hoje. Volte amanhã para mais criações.’
-              </p>
-              <p>Se você já passou por isso, tenho uma dica que pode te ajudar.</p>
-              <p>
-                Clique nos <strong>três pontinhos</strong> do vídeo que você quer continuar ou refazer. Depois, selecione a opção <strong>‘Ramificar em uma nova conversa’</strong>.
-              </p>
-              <p>
-                O Gemini vai abrir uma nova conversa baseada naquele vídeo, permitindo que você continue criando, faça alterações ou adicione novas informações.
-              </p>
-              <p className="text-amber-400 font-medium text-xs md:text-sm pt-1">
-                ✨ Na maioria das vezes será possível gerar mais vídeos usando esse recurso.
-              </p>
-            </div>
+            <p className="text-amber-400 font-medium text-xs md:text-sm pt-3">✨ Na maioria das vezes será possível gerar mais vídeos usando esse recurso.</p>
           </div>
+
+          {/* Card 2: Truque do KD */}
+          <div className="rounded-xl border border-amber-500 bg-amber-500/10 p-5 shadow-[0_0_20px_rgba(245,158,11,0.2)] text-left flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-2 mb-3 text-amber-500 font-bold text-base md:text-lg">
+                <Sparkles className="h-5 w-5 fill-amber-500" />
+                <h2>⚡ TRUQUE: O que fazer se a IA travar ou ignorar o comando</h2>
+              </div>
+              <div className="text-sm md:text-base text-zinc-200 space-y-3 leading-relaxed">
+                <p>Você mandou o Gemini ou o ChatGPT gerar uma foto, vídeo ou um texto longo, a resposta travraw pela metade ou ele simplesmente ignorou o comando como se estivesse esperando outra coisa?</p>
+                <p>Não há necessidade de reescrever ou colar o prompt gigante todo de novo do zero!</p>
+                <p>No mesmo campo de chat, digite apenas <strong className="bg-amber-500/20 border border-amber-500/30 px-2 py-0.5 rounded text-amber-400 font-bold">KD</strong> ou <strong className="bg-amber-500/20 border border-amber-500/30 px-2 py-0.5 rounded text-amber-400 font-bold">continue</strong> e dê enter.</p>
+                <p>Esse comando curto e informal quebra o loop do sistema, força a IA a retomar de onde parou e, na maioria das vezes, faz com que ela entregue o resultado da última instrução imediatamente.</p>
+              </div>
+            </div>
+            <p className="text-amber-400 font-medium text-xs md:text-sm pt-3">🚀 Destrave a linha de raciocínio da IA na hora.</p>
+          </div>
+
         </div>
       </section>
 
