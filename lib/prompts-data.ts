@@ -1,3 +1,4 @@
+
 export interface Prompt {
   readonly id: number;
   readonly title: string;
