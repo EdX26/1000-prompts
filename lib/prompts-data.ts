@@ -652,14 +652,15 @@ export const prompts: Prompt[] = [
 
 const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =>
   a.localeCompare(b, 'pt-BR')
-);
-
-export const uniqueCategories = rawCategories.filter(
-  (category) => category.toLowerCase() !== "todos"
-);
+{
+    id: 215,
+    title: "Plano de Ação Rápido",
+    prompt: "Crie um plano de ação de 5 passos imediatos para começar a resolver o seguinte problema: [PROBLEMA].\nCada passo deve ser uma tarefa prática, direta e que dependa apenas de um esforço simples.\nOrdene a lista por ordem de prioridade, do mais urgente para o menos urgente.",
+    category: "Direto ao Ponto"
+  }
 ];
 
-const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) => 
+const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =>
   a.localeCompare(b, 'pt-BR')
 );
 
