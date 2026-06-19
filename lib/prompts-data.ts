@@ -551,7 +551,112 @@ export const prompts: Prompt[] = [
     title: "O Pedido de Isenção ou Desconto de Taxas",
     category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
     prompt: "Preciso pedir a isenção de uma taxa de inscrição ou desconto em juros de uma conta atrasada por motivos de força maior (como desemprego ou doença na família): [EXPLIQUE A SUA SITUACÃO E A TAXA]. Escreva uma justificativa formal e respeitável para eu enviar à instituição, explicando a minha real condição e solicitando a flexibilização do valor."
+  },
+  {
+    id: 107,
+    title: "O Pedido de Isenção ou Desconto de Taxas",
+    category: "Burocracia Sem Crise: Direitos, Argumentos & Documentos",
+    prompt: "Preciso pedir a isenção de uma taxa de inscrição ou desconto em juros de uma conta atrasada por motivos de força maior (como desemprego ou doença na família): [EXPLIQUE A SUA SITUAÇÃO E O PEDIDO]."
+  },
+  {
+    id: 201,
+    title: "Resumo Prático",
+    prompt: "Faça um resumo bem curto e em tópicos dos pontos principais do texto a seguir.\nFoque apenas nas informações que são realmente importantes e práticas para o leitor.\n[COLE O TEXTO AQUI]",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 202,
+    title: "Ideias de Conteúdo",
+    prompt: "Crie 5 ideias de títulos chamativos e altamente clicáveis para um vídeo curto sobre [ASSUNTO].\nOs títulos devem focar em gerar curiosidade e prender a atenção do público nos primeiros segundos.\nEvite clichês e use uma linguagem direta, moderna e impactante.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 203,
+    title: "Clareza de Texto",
+    prompt: "Reescreva o texto abaixo para deixá-lo muito mais claro, profissional e direto ao ponto.\nRemova todas as palavras repetitivas, enrolações e termos difíceis de entender.\n[COLE SEU TEXTO AQUI]",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 204,
+    title: "E-mail Profissional",
+    prompt: "Escreva um e-mail curto e profissional agendando uma reunião com [NOME/CARGO] para tratar de [ASSUNTO].\nO tom deve ser direto, respeitoso e sugerir duas opções de horários na próxima semana.\nDeixe os campos em colchetes para eu preencher os dados finais.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 205,
+    title: "Resposta de Cliente",
+    prompt: "Redija uma resposta educada e firme para um cliente que está reclamando sobre [MOTIVO DA RECLAMAÇÃO].\nFoque em propor uma solução rápida para o problema e em manter o bom relacionamento.\nMantenha o texto com no máximo dois parágrafos curtos.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 206,
+    title: "Chuva de Ideias (Brainstorming)",
+    prompt: "Liste 10 ideias criativas e fora do comum para o seguinte projeto: [DESCREVA O PROJETO].\nFoque em soluções viáveis, mas que chamem a atenção do público-alvo de forma inovadora.\nEntregue apenas a lista direta, sem introduções ou explicações longas.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 207,
+    title: "Correção de Código",
+    prompt: "Analise o código abaixo e identifique por que ele está apresentando erro ou travando.\nCorrija o problema mantendo a estrutura limpa e adicione um comentário curto explicando o erro.\n[COLE O CÓDIGO AQUI]",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 208,
+    title: "Tradução Natural",
+    prompt: "Traduza o texto a seguir para o [IDIOMA], adaptando gírias e expressões para soar totalmente natural.\nEvite traduções literais que deixem o texto truncado ou artificial para um nativo.\n[COLE O TEXTO AQUI]",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 209,
+    title: "Explicação Simples",
+    prompt: "Explique o conceito de [CONCEITO DIFÍCIL] como se eu tivesse apenas 10 anos de idade.\nUse uma analogia simples do dia a dia para que a ideia fique fácil de fixar na mente.\nLimite a explicação a um parágrafo curto e direto.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 210,
+    title: "Roteiro para Vídeo Curto",
+    prompt: "Crie um roteiro de 30 segundos para um vídeo dinâmico no Reels/TikTok sobre [ASSUNTO].\nDivida a estrutura em: Gancho Inicial (até 3s), Conteúdo Direto (22s) e Chamada para Ação (5s).\nIndique entre parênteses o que deve aparecer na tela em cada parte.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 211,
+    title: "Descrição de Produto",
+    prompt: "Escreva uma descrição curta e persuasiva para vender o seguinte produto: [NOME E DETALHES].\nDestaque o maior benefício que ele traz para o cliente e crie um senso de oportunidade.\nO texto deve ser ideal para uma legenda de rede social ou página de vendas.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 212,
+    title: "Definição de Metas",
+    prompt: "Transforme o seguinte objetivo genérico em uma meta clara usando a metodologia SMART: [OBJETIVO].\nA meta final deve ser específica, mensurável, atingível, relevante e ter um prazo definido.\nEntregue o resultado formatado em uma única frase de impacto.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 213,
+    title: "Extração de Dados",
+    prompt: "Extraia do texto abaixo apenas os nomes de empresas, valores financeiros e datas mencionadas.\nOrganize essas informações extraídas em uma tabela simples com três colunas bem definidas.\n[COLE O TEXTO AQUI]",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 214,
+    title: "Criação de Hashtags e Tags",
+    prompt: "Gere as 15 melhores hashtags e palavras-chave para engajar um post focado em [ASSUNTO].\nMisture termos de grande volume com termos específicos do nicho para melhorar o alcance.\nEntregue os termos separados apenas por espaços, prontos para copiar e colar.",
+    category: "Direto ao Ponto"
+  },
+  {
+    id: 215,
+    title: "Plano de Ação Rápido",
+    prompt: "Crie um plano de ação de 5 passos imediatos para começar a resolver o seguinte problema: [PROBLEMA].\nCada passo deve ser uma tarefa prática, direta e que dependa apenas de um esforço simples.\nOrdene a lista por ordem de prioridade, do mais urgente para o menos urgente.",
+    category: "Direto ao Ponto"
   }
+];
+
+const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) =>
+  a.localeCompare(b, 'pt-BR')
+);
+
+export const uniqueCategories = rawCategories.filter(
+  (category) => category.toLowerCase() !== "todos"
+);
 ];
 
 const rawCategories = [...new Set(prompts.map((p) => p.category))].sort((a, b) => 
